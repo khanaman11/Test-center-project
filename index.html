@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Book My Test Project</title>
+    <!-- Bootstrap 5 CSS -->
+
+</head>
+
+<body>
+
+    <!--  Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="./image/logo.png" alt="Company Logo">
+            </a>
+            <!-- Toggler for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links and Login Button -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Who_Are_We">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Our_Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Key_Features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact_Me">Contact</a>
+                    </li>
+                </ul>
+                <!-- Login Button on the Right -->
+                <a href="#" class="btn btn-login">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!--  Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <!-- Background Video -->
+        <video autoplay muted loop>
+            <source src="./assets/BookmyTestcenter - MQ.mp4" type="video/mp4"> <!-- Replace with your video -->
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Text in the Center of the Hero Section -->
+        <div class="hero-content">
+            <h1>Welcome to Our World</h1>
+            <p>Experience innovation like never before</p>
+            <a href="#" class="btn btn-cta">Get Started</a>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Who Are We Section Start -->
+    <section class="who-we-are container">
+        <!-- Heading and Button Row -->
+        <h2>Who Are We ?</h2>
+        <div class="who-we-are-header">
+            <p class="m-0">Book my test center</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <!-- Card Row -->
+        <div class="row gy-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-custom">
+                    <div class="card-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>Innovators</h4>
+                    <p>We bring unique ideas and creative solutions to our .</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-custom">
+                    <div class="card-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Team Players</h4>
+                    <p>Collaboration is at the heart of everything we do.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-custom">
+                    <div class="card-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h4>Global Reach</h4>
+                    <p>Connecting and impacting people across the globe.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-custom">
+                    <div class="card-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h4>Problem Solvers</h4>
+                    <p>We tackle complex problems with practical .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Who Are We Section End -->
+
+    <!-- Services Section Start -->
+    <section class="services-section container">
+        <div class="row">
+            <!-- Left Side: Heading, Text, and Accordion -->
+            <div class="col-md-6">
+                <div class="services-content">
+                    <h2>Our Services</h2>
+                    <p>We offer a range of services tailored to help your business grow. Discover our specialties below.
+                    </p>
+                </div>
+
+                <div class="accordion" id="servicesAccordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                onclick="showImage(1)">
+                                Web Development
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                We create responsive, secure, and scalable websites tailored to your business needs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                onclick="showImage(2)">
+                                App Development
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Develop high-performance mobile apps for both Android and iOS platforms.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                                onclick="showImage(3)">
+                                Digital Marketing
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Enhance your online presence and reach a broader audience through effective marketing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                onclick="showImage(4)">
+                                SEO Optimization
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Improve your website’s search engine ranking with our SEO services.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image Display -->
+            <div class="col-md-6">
+                <div class="image-display">
+                    <img src="./image/img1.jpg" alt="Web Development" id="image1" class="active"> <!-- Image 1 -->
+                    <img src="./image/img2.jpg" alt="App Development" id="image2"> <!-- Image 2 -->
+                    <img src="./image/img3.jpg" alt="Digital Marketing" id="image3"> <!-- Image 3 -->
+                    <img src="./image/img4.jpg" alt="SEO Optimization" id="image4"> <!-- Image 4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Key Features Section Start -->
+    <section class="features-section container">
+        <div class="row">
+            <!-- Left Side: Heading and Links -->
+            <div class="col-md-4 features-left">
+                <h2>Key Features</h2>
+                <p>BookmyTestcenter</p>
+                <a href="#feature1">Feature 1</a>
+                <a href="#feature2">Feature 2</a>
+                <a href="#feature3">Feature 3</a>
+                <a href="#feature4">Feature 4</a>
+            </div>
+
+            <!-- Right Side: Feature Cards -->
+            <div class="col-md-8">
+                <div class="row gy-4">
+                    <!-- Feature Card 1 -->
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌟</div>
+                            <h5>Feature 1 Title</h5>
+                            <ul class="feature-points">
+                                <li>Benefit 1</li>
+                                <li>Benefit 2</li>
+                                <li>Benefit 3</li>
+                                <li>Benefit 4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h5>Feature 2 Title</h5>
+                            <ul class="feature-points">
+                                <li>Benefit 1</li>
+                                <li>Benefit 2</li>
+                                <li>Benefit 3</li>
+                                <li>Benefit 4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h5>Feature 3 Title</h5>
+                            <ul class="feature-points">
+                                <li>Benefit 1</li>
+                                <li>Benefit 2</li>
+                                <li>Benefit 3</li>
+                                <li>Benefit 4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">💻</div>
+                            <h5>Feature 4 Title</h5>
+                            <ul class="feature-points">
+                                <li>Benefit 1</li>
+                                <li>Benefit 2</li>
+                                <li>Benefit 3</li>
+                                <li>Benefit 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-get-touch rounded mt-3">Get in touch</a>
+            </div>
+        </div>
+    </section>
+    <!-- Key Features Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section container">
+        <h2 class="contact-heading">Contact Me</h2>
+        <div class="row">
+            <!-- Left Side: Image -->
+            <div class="col-md-5 mb-4 contact-image">
+                <img src="./image/img3.jpg" alt="Contact Image">
+            </div>
+
+            <!-- Right Side: Form and Options -->
+            <div class="col-md-7">
+                <div class="contact-form">
+                    <div class="row">
+                        <!-- Input Fields -->
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" placeholder="Email ID">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="tel" class="form-control" placeholder="Contact Number">
+                        </div>
+                    </div>
+
+                    <!-- Option Cards with Checkboxes -->
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="option-card" onclick="toggleCardSelection(1)">
+                                <div class="card-header">
+                                    <span class="option-heading">Option 1</span>
+                                    <input type="checkbox" id="checkbox1" onclick="event.stopPropagation()">
+                                </div>
+                                <p class="option-text">Description for option 1 explaining its benefits.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="option-card" onclick="toggleCardSelection(2)">
+                                <div class="card-header">
+                                    <span class="option-heading">Option 2</span>
+                                    <input type="checkbox" id="checkbox2" onclick="event.stopPropagation()">
+                                </div>
+                                <p class="option-text">Description for option 2 explaining its benefits.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="option-card" onclick="toggleCardSelection(3)">
+                                <div class="card-header">
+                                    <span class="option-heading">Option 3</span>
+                                    <input type="checkbox" id="checkbox3" onclick="event.stopPropagation()">
+                                </div>
+                                <p class="option-text">Description for option 3 explaining its benefits.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="option-card" onclick="toggleCardSelection(4)">
+                                <div class="card-header">
+                                    <span class="option-heading">Option 4</span>
+                                    <input type="checkbox" id="checkbox4" onclick="event.stopPropagation()">
+                                </div>
+                                <p class="option-text">Description for option 4 explaining its benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Send Button -->
+                    <button class="send-button">Send</button>
+
+                    <!-- Write Custom Message Link -->
+                    <span class="custom-message-link" onclick="toggleMessageBox()">Write Custom Message</span>
+
+                    <!-- Custom Message Box -->
+                    <div class="custom-message">
+                        <textarea placeholder="Write your custom message here..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+        <div class="footer-background"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-md-3 mb-3">
+                    <div class="footer-logo">
+                        <img src="./image/logo.png" alt="logo-footer">
+                    </div>
+                    <p>We innovate and create technology solutions that make a difference.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-2 mb-2 footer-nav">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-2 footer-nav">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-2 footer-nav">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscription Form and Social Icons -->
+                <div class="col-md-3 mb-3">
+                    <h5>Stay Updated</h5>
+                    <p>Subscribe to our newsletter for the latest updates and offers:</p>
+                    <form class="subscription-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="subscribe-button">Subscribe</button>
+                    </form>
+                    <div class="social-icons mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Geniusgride Technologies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- all useful links import here -->
+
+    <!-- js link -->
+    <script src="./js/script.js"></script>
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <!-- Font Awesome CSS for Social Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</body>
+</body>
+
+</html>

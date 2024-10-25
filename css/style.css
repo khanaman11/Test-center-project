@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar Custom Styling */
+.navbar {
+  background-color: #2c3e50; /* Dark background */
+  /* padding: 15px; */
+}
+
+/* Logo Customization */
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1rem;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+/* Hover Effects on Links */
+.navbar-nav .nav-link:hover {
+  color: #f39c12 !important; /* Gold color on hover */
+}
+
+/* Login Button Styling */
+.btn-login {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+.btn-login:hover {
+  background-color: #e67e22; /* Darker gold on hover */
+}
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Fullscreen Video */
+.hero-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Dark Overlay with Shadow Layer */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.7); /* Shadow layer */
+  z-index: 2;
+}
+
+/* Text in the Center of Hero Section */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 3;
+}
+
+.hero-content h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.hero-content .btn-cta {
+  background-color: #f39c12;
+  color: white;
+  /* padding: 12px 30px; */
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-content .btn-cta:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+/* Section Who are we start */
+.who-we-are {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Heading and Button Row */
+.who-we-are-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.who-we-are-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.who-we-are-header .btn {
+  background-color: #f39c12;
+  color: white;
+  font-size: 1.2rem;
+  /* padding: 10px 30px; */
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.who-we-are-header .btn:hover {
+  background-color: #e67e22;
+}
+
+/* Card Styling */
+.card-custom {
+  text-align: center;
+  padding: 20px;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+}
+
+.card-custom .card-icon {
+  font-size: 3rem;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.card-custom h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-custom p {
+  color: #777;
+}
+
+/* Services Section Styling */
+.services-section {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+}
+
+/* Left Side (Text + Accordion) */
+.services-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.accordion-button:hover {
+  color: #f39c12;
+}
+
+/* Right Side (Image Display) */
+.image-display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-height: 300px; /* Ensures consistent height */
+}
+
+.image-display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 10px;
+}
+
+.image-display img.active {
+  opacity: 1;
+}
+
+/* Key Features Section Styling  start */
+
+.features-section {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+}
+
+.features-left {
+  margin-bottom: 30px;
+}
+
+/* Left Side (Heading + Links) */
+.features-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features-left a {
+  display: block;
+  font-size: 1.1rem;
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: color 0.3s;
+}
+
+.features-left a:hover {
+  color: #333;
+}
+
+/* Right Side (Feature Cards) */
+.feature-card {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #f6f6f6;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.feature-card h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-points {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-points li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.feature-points li::before {
+  content: "•";
+  color: #f39c12;
+  position: absolute;
+  left: 0;
+}
+.btn-get-touch {
+  background-color: #f39c12;
+  width: 100%;
+  border-radius: 20px !important;
+}
+.btn-get-touch:hover {
+  background-color: #e2a849;
+  color: #222;
+}
+
+/* Contact Section Styling start*/
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+/* Left Side Image */
+.contact-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 654px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side Form */
+.contact-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 4px rgba(243, 156, 18, 0.5);
+}
+
+/* Option Card */
+.option-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Highlight selected card */
+.option-card.selected {
+  background-color: #f39c12;
+  color: white;
+  border-color: #f39c12;
+}
+
+.option-card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option-heading {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.option-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Send Button */
+.send-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Custom Message Link */
+.custom-message-link {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #f39c12;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.custom-message-link:hover {
+  color: #333;
+}
+
+/* Custom Message Box */
+.custom-message {
+  display: none;
+  margin-top: 20px;
+}
+
+.custom-message textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  resize: none;
+}
+/* Contact Section Styling end */
+
+     /* Footer Styling start */
+     .footer-section {
+        background-color: #222;
+        color: #ffffff;
+        padding: 60px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Animated Background */
+    .footer-background {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: radial-gradient(circle, #444, transparent 70%);
+        animation: rotateBackground 20s linear infinite;
+        opacity: 0.3;
+    }
+
+    @keyframes rotateBackground {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .footer-logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #f39c12;
+    }
+    .footer-logo img{
+        width: 150px;
+    }
+
+    /* Links & Buttons */
+    .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-nav ul li a:hover {
+        color: #f39c12;
+        transform: scale(1.05);
+    }
+
+    /* Social Media Icons */
+    .social-icons a {
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-right: 15px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #f39c12;
+        transform: scale(1.2);
+    }
+
+    /* Subscription Form */
+    .subscription-form input {
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .subscription-form input:focus {
+        transform: scale(1.03);
+        box-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
+    }
+
+    .subscribe-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #f39c12;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .subscribe-button:hover {
+        background-color: #333;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        padding-top: 20px;
+        font-size: 0.9rem;
+        color: #cccccc;
+        border-top: 1px solid #555;
+        text-align: center;
+    }
+    /* footer styling end */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Responsive Design Navbar section */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-content .btn-cta {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+/* Responsive Design  who are we*/
+@media (max-width: 768px) {
+  .who-we-are-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .who-we-are-header h2 {
+    font-size: 2rem;
+  }
+
+  .who-we-are-header .btn {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Responsive Design services section */
+@media (max-width: 768px) {
+  .image-display {
+    margin-top: 20px;
+  }
+}
+
+/* Responsive Design of features section*/
+@media (max-width: 768px) {
+  .features-section {
+    text-align: center;
+  }
+}
+
+/* Responsive Layout Adjustments contact section */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-heading {
+    font-size: 1.6rem;
+  }
+  .contact-form {
+    padding: 15px;
+  }
+}
