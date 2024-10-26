@@ -45,7 +45,7 @@
                     </li>
                 </ul>
                 <!-- Login Button on the Right -->
-                <a href="#" class="btn btn-login">Login</a>
+                <a href="./loginPage.html" class="btn btn-login">Login</a>
             </div>
         </div>
     </nav>
@@ -300,83 +300,41 @@
     <!-- Key Features Section End -->
 
     <!-- Contact Section Start -->
-    <section class="contact-section container" id="contact">
-        <h2 class="contact-heading">Contact Me</h2>
-        <div class="row">
-            <!-- Left Side: Image -->
-            <div class="col-md-5 mb-4 contact-image">
-                <img src="./image/img3.jpg" alt="Contact Image">
-            </div>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image Section -->
+                <div class="col-md-6 mb-4 contact-image">
+                    <img src="./image/img3.jpg" alt="Contact Us Image">
+                </div>
 
-            <!-- Right Side: Form and Options -->
-            <div class="col-md-7">
-                <div class="contact-form">
-                    <div class="row">
-                        <!-- Input Fields -->
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="First Name">
+                <!-- Right Form Section -->
+                <div class="col-md-6 contact-form">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <!-- First Name -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="First Name" required>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="Last Name">
+                        <!-- Last Name -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name" required>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <input type="email" class="form-control" placeholder="Email ID">
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <input type="tel" class="form-control" placeholder="Contact Number">
+                        <!-- Contact Number -->
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Contact Number" required>
                         </div>
-                    </div>
-
-                    <!-- Option Cards with Checkboxes -->
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="option-card" onclick="toggleCardSelection(1)">
-                                <div class="card-header">
-                                    <span class="option-heading">Option 1</span>
-                                    <input type="checkbox" id="checkbox1" onclick="event.stopPropagation()">
-                                </div>
-                                <p class="option-text">Description for option 1 explaining its benefits.</p>
-                            </div>
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="option-card" onclick="toggleCardSelection(2)">
-                                <div class="card-header">
-                                    <span class="option-heading">Option 2</span>
-                                    <input type="checkbox" id="checkbox2" onclick="event.stopPropagation()">
-                                </div>
-                                <p class="option-text">Description for option 2 explaining its benefits.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="option-card" onclick="toggleCardSelection(3)">
-                                <div class="card-header">
-                                    <span class="option-heading">Option 3</span>
-                                    <input type="checkbox" id="checkbox3" onclick="event.stopPropagation()">
-                                </div>
-                                <p class="option-text">Description for option 3 explaining its benefits.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="option-card" onclick="toggleCardSelection(4)">
-                                <div class="card-header">
-                                    <span class="option-heading">Option 4</span>
-                                    <input type="checkbox" id="checkbox4" onclick="event.stopPropagation()">
-                                </div>
-                                <p class="option-text">Description for option 4 explaining its benefits.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Send Button -->
-                    <button class="send-button">Send</button>
-
-                    <!-- Write Custom Message Link -->
-                    <span class="custom-message-link" onclick="toggleMessageBox()">Write Custom Message</span>
-
-                    <!-- Custom Message Box -->
-                    <div class="custom-message">
-                        <textarea placeholder="Write your custom message here..."></textarea>
-                    </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn submit-button">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
