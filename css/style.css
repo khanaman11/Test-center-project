@@ -123,6 +123,12 @@
   background-color: #f8f9fa;
   color: #333;
 }
+.about{
+  font-size: 1.8rem;
+  color: #2a5298;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
 /* Heading and Button Row */
 .who-we-are-header {
@@ -191,10 +197,10 @@
 
 /* Left Side (Text + Accordion) */
 .services-content h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
+    font-size: 1.8rem;
+    color: #2a5298;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .services-content p {
@@ -259,9 +265,9 @@
 
 /* Left Side (Heading + Links) */
 .features-left h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  color: #2a5298;
   font-weight: bold;
-  color: #333;
   margin-bottom: 20px;
 }
 
