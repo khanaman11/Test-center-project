@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Book My Test Project</title>
     <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -32,13 +35,16 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#our founder">Our Founder</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#help">Help</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -67,6 +73,68 @@
         </div>
     </section>
     <!-- Hero Section End -->
+
+    <!-- Infinite Scroll Section start-->
+    <section class="infinite-scroll-container" id="our founder">
+        <div class="container">
+            <!-- Heading and Intro Section -->
+            <div class="row ">
+                <div class="col-md-8 scroll-header">
+                    <h2>Word from our Founder</h2>
+                </div>
+                <div class="col-md-8 d-flex justify-content-start align-items-end">
+                    <p class="intro-text">Explore our range of services designed to cater.</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-md-end align-items-center">
+                    <button class="scroll-btn btn">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Scrolling Content -->
+            <div class="scroll-content">
+                <!-- Original Items -->
+                <div class="scroll-item">
+                    <img src="./image/comp1.png" alt="Image 1">
+                    <!-- <p>Caption for Image 1</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp2.png" alt="Image 2">
+                    <!-- <p>Caption for Image 2</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp3.png" alt="Image 3">
+                    <!-- <p>Caption for Image 3</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp4.png" alt="Image 4">
+                    <!-- <p>Caption for Image 4</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp5.png" alt="Image 5">
+                    <!-- <p>Caption for Image 5</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp6.png" alt="Image 6">
+                    <!-- <p>Caption for Image 6</p> -->
+                </div>
+                <!-- Duplicate Items for seamless transition -->
+                <div class="scroll-item">
+                    <img src="./image/comp7.png" alt="Image 1">
+                    <!-- <p>Caption for Image 1</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp8.png" alt="Image 2">
+                    <!-- <p>Caption for Image 2</p> -->
+                </div>
+                <div class="scroll-item">
+                    <img src="./image/comp9.png" alt="Image 3">
+                    <!-- <p>Caption for Image 3</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Infinite Scroll Section end-->
+
 
     <!-- Who Are We Section Start -->
     <section class="who-we-are container" id="about">
@@ -129,14 +197,22 @@
     <!-- Services Section Start -->
     <section class="services-section container" id="services">
         <div class="row">
-            <!-- Left Side: Heading, Text, and Accordion -->
-            <div class="col-md-6">
+            <div class="col-6">
                 <div class="services-content">
                     <h2>Our Services</h2>
                     <p>We offer a range of services tailored to help your business grow. Discover our specialties below.
                     </p>
                 </div>
-
+            </div>
+            <div class="col-6 services-btn">
+                <div class="who-we-are-header">
+                    <a href="https://testpanindia.com/" class="btn">Request a call</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Left Side: Heading, Text, and Accordion -->
+            <div class="col-md-6">
                 <div class="accordion" id="servicesAccordion">
                     <!-- Accordion Item 1 -->
                     <div class="accordion-item">
@@ -205,6 +281,22 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Accordion Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour"
+                                onclick="showImage(5)">
+                              My world is best
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#servicesAccordion">
+                            <div class="accordion-body">
+                                Improve your website’s search engine ranking with our SEO services.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -215,139 +307,169 @@
                     <img src="./image/img2.jpg" alt="App Development" id="image2"> <!-- Image 2 -->
                     <img src="./image/img3.jpg" alt="Digital Marketing" id="image3"> <!-- Image 3 -->
                     <img src="./image/img4.jpg" alt="SEO Optimization" id="image4"> <!-- Image 4 -->
+                    <img src="./image/web dev.jpg" alt="SEO Optimization" id="image4"> <!-- Image 5 -->
                 </div>
             </div>
         </div>
     </section>
     <!-- Services Section End -->
 
-    <!-- Key Features Section Start -->
-    <section class="features-section container" id="features">
-        <div class="row">
-            <!-- Left Side: Heading and Links -->
-            <div class="col-md-4 features-left">
-                <h2>Key Features</h2>
-                <p class="fw-normal">BookmyTestcenter</p>
-                <a href="#feature1">1. User-friendly to guide visitors.</a>
-                <a href="#feature2">2. Adapts seamlessly across all devices</a>
-                <a href="#feature3">3. Easily accessible ways to reach you.</a>
-                <a href="#feature4">4. Overview of company values.</a>
-                <a href="#feature4">5. Visually engaging display of offerings.</a>
-                <a href="#feature4">6. Builds trust with authentic reviews.</a>
-                <a href="#feature4">7. Engages visitors with industry.</a>
-                <a href="#feature4">8. Improves search engine visibility.</a>
-                <a href="#feature4">9. Easily accessible ways to reach you</a>
-                <a href="#feature4">10. Ensures smooth user experience.</a>
-                <a href="#feature4">11. Encourages user engagement.</a>
-                <a href="#feature4">12. Easily accessible ways to reach you</a>
-                <a href="#feature4">13. Overview of company values.</a>
+    <!-- Who do we help Section Start -->
+    <section class="help-section container" id="help">
+        <!-- Header with Title, Description, and Button -->
+        <div class="help-header">
+            <div>
+                <h2 class="help-title">Who Do We Help?</h2>
+                <p class="help-description">Our solutions assist a diverse range of clients in reaching their business goals. .</p>
             </div>
+            <div>
+                <button class="btn btn-contact">Contact Us</button>
+            </div>
+        </div>
 
-            <!-- Right Side: Feature Cards -->
-            <div class="col-md-8">
-                <div class="row gy-4">
-                    <!-- Feature Card 1 -->
-                    <div class="col-md-6">
-                        <div class="feature-card">
-                            <div class="feature-icon">🌟</div>
-                            <h5>Feature 1 Title</h5>
-                            <ul class="feature-points">
-                                <li>Benefit 1</li>
-                                <li>Benefit 2</li>
-                                <li>Benefit 3</li>
-                                <li>Benefit 4</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Feature Card 2 -->
-                    <div class="col-md-6">
-                        <div class="feature-card">
-                            <div class="feature-icon">🚀</div>
-                            <h5>Feature 2 Title</h5>
-                            <ul class="feature-points">
-                                <li>Benefit 1</li>
-                                <li>Benefit 2</li>
-                                <li>Benefit 3</li>
-                                <li>Benefit 4</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Feature Card 3 -->
-                    <div class="col-md-6">
-                        <div class="feature-card">
-                            <div class="feature-icon">🔒</div>
-                            <h5>Feature 3 Title</h5>
-                            <ul class="feature-points">
-                                <li>Benefit 1</li>
-                                <li>Benefit 2</li>
-                                <li>Benefit 3</li>
-                                <li>Benefit 4</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Feature Card 4 -->
-                    <div class="col-md-6">
-                        <div class="feature-card">
-                            <div class="feature-icon">💻</div>
-                            <h5>Feature 4 Title</h5>
-                            <ul class="feature-points">
-                                <li>Benefit 1</li>
-                                <li>Benefit 2</li>
-                                <li>Benefit 3</li>
-                                <li>Benefit 4</li>
-                            </ul>
-                        </div>
+        <!-- Card Row -->
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card">
+                    <img src="./image/img1.jpg" alt="Small Businesses">
+                    <div class="card-body">
+                        <h5 class="card-title">Small Businesses</h5>
+                        <p class="card-text">Helping small businesses grow and scale efficiently with innovative strategies.</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
                     </div>
                 </div>
-                <a href="#contact" class="btn btn-get-touch rounded mt-3">Get in touch</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card">
+                    <img src="./image/img2.jpg" alt="Enterprises">
+                    <div class="card-body">
+                        <h5 class="card-title">Enterprises</h5>
+                        <p class="card-text">Providing robust solutions to large enterprises to drive digital transformation.</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="help-card">
+                    <img src="./image/img3.jpg" alt="Non-Profits">
+                    <div class="card-body">
+                        <h5 class="card-title">Non-Profits</h5>
+                        <p class="card-text">Supporting non-profits with tools and strategies to make a greater impact. and impration</p>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Key Features Section End -->
+    <!-- Who do we help Section End -->
 
     <!-- Contact Section Start -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Image Section -->
-                <div class="col-md-6 mb-4 contact-image">
-                    <img src="./image/img3.jpg" alt="Contact Us Image">
-                </div>
+    <div class="container contact-section" id="contact">
+        <div class="row">
+            <!-- Left Side Image -->
+            <div class="col-md-6 mb-4 d-flex align-items-stretch">
+                <img src="./image/img3.jpg" alt="Contact Us" class="img-fluid contact-image">
+            </div>
 
-                <!-- Right Form Section -->
-                <div class="col-md-6 contact-form">
-                    <h2>Contact Us</h2>
-                    <form>
-                        <!-- First Name -->
+            <!-- Right Side Form -->
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="w-100">
+                    <h2>Contact Me</h2>
+                    <p class="contact-text">Need to discuss something? Feel free to reach out!</p>
+
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="First Name" required>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
                         </div>
-                        <!-- Last Name -->
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Last Name" required>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
                         </div>
-                        <!-- Email -->
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" required>
                         </div>
-                        <!-- Contact Number -->
-                        <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Contact Number" required>
+
+                        <!-- Cards Section Inside Form -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 1</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 2</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 3</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 4</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 4.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Message -->
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <!-- Submit Button -->
-                        <button type="submit" class="btn submit-button">Send Message</button>
+
+                        <!-- Send Button -->
+                        <button type="button" class="send-button" onclick="submitForm()">Send</button>
+
+                        <!-- Message Link -->
+                        <p class="message-link" data-bs-toggle="modal" data-bs-target="#messageModal">Write custom message </p>
                     </form>
+
+                    <!-- Message Modal -->
+                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="messageModalLabel">Your Message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <textarea id="messageText" class="form-control" rows="4" placeholder="Type your message here..."></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
@@ -425,11 +547,11 @@
     <!-- Bootstrap 5 JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-    <!-- Font Awesome CSS for Social Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    
+    
 </body>
 </body>
 
