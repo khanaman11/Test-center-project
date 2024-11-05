@@ -382,7 +382,7 @@
 }
 
 .help-box {
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -626,6 +626,137 @@
   }
 
 /* FAQ section style end */
+
+/* banner style start */
+/* Background and Overlay */
+.pre-footer-section {
+  position: relative;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.pre-footer-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Left Section Text */
+.pre-footer-text {
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
+}
+
+.pre-footer-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.pre-footer-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.subscribe-btn {
+  padding: 12px 25px;
+  background: #ff7f50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+}
+
+/* Social Media Icons */
+.icons-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* Right Section Video */
+.pre-footer-video {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.pre-footer-video video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pre-footer-content {
+    flex-direction: column;
+  }
+
+  .pre-footer-text, .pre-footer-video {
+    max-width: 100%;
+  }
+
+  .pre-footer-video {
+    margin-top: 20px;
+  }
+}
+
+/* banner style end */
 
 /* Footer Styling start */
 .footer-section {
