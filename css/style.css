@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-.section-backgrond{
+.section-backgrond {
   background-color: #ddd;
 }
 
@@ -302,7 +302,7 @@
   border: none;
   box-shadow: none; /* Remove any shadow, if there is one */
 }
-.servicesAccordion .accordion-header{
+.servicesAccordion .accordion-header {
   padding: 0;
 }
 
@@ -439,10 +439,10 @@
 .text {
   font-size: 1em;
 }
-.get-touch-btn{
+.get-touch-btn {
   background-color: #f39c12;
 }
-.get-touch-btn:hover{
+.get-touch-btn:hover {
   background-color: #fd7e14;
 }
 
@@ -519,13 +519,16 @@
 
 .faq-section {
   padding: 40px;
-  /* background-color: #f9f9f9; */
+  /* background-color: #f9f9f9;g */
 }
 
 .faq-heading {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 10px;
+  font-size: 38px;
+  color: #2a5298;
+  font-weight: bold;
+  
 }
 
 .faq-subtext {
@@ -563,42 +566,42 @@
 }
 
 .new-faq-accordion {
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
 .accordion-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns items to the left */
-    width: 100%;
-    padding: 15px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    /* background-color: #f4f4f4; Light background */
-    border: none;
-    border-bottom: 1px solid #ddd; /* Optional separator */
-    transition: background-color 0.3s;
-    gap: 10px; /* Adds space between the icon and text */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns items to the left */
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* background-color: #f4f4f4; Light background */
+  border: none;
+  border-bottom: 1px solid #ddd; /* Optional separator */
+  transition: background-color 0.3s;
+  gap: 10px; /* Adds space between the icon and text */
 }
 .accordion-icon-left {
-    font-size: 1.2rem;
-    margin-right: 0px;
+  font-size: 1.2rem;
+  margin-right: 0px;
 }
 .accordion-icon-right {
-    margin-left: auto; /* Pushes the right icon to the far right */
-    font-size: 1rem;
-    transition: transform 0.3s;
+  margin-left: auto; /* Pushes the right icon to the far right */
+  font-size: 1rem;
+  transition: transform 0.3s;
 }
 .accordion-header.active .accordion-icon-right {
-    transform: rotate(180deg); /* Rotates the icon when the accordion is open */
+  transform: rotate(180deg); /* Rotates the icon when the accordion is open */
 }
 
 .accordion-header:hover {
-    background-color: #e0e0e0;/* Slight hover effect */
+  background-color: #e0e0e0; /* Slight hover effect */
 }
 .accordion-icon {
   font-size: 1rem;
@@ -609,10 +612,10 @@
 }
 
 .accordion-content {
-    display: none;
-    padding: 15px 20px;
-    background-color: #fff; /* White content background */
-    color: #333; /* Dark text */ /* Removes border line around the content */
+  display: none;
+  padding: 15px 20px;
+  background-color: #fff; /* White content background */
+  color: #333; /* Dark text */ /* Removes border line around the content */
 }
 
 .accordion-content p {
@@ -622,8 +625,8 @@
   border: none; /* Removes the border line from the accordion item */
 }
 .accordion-item:last-child .accordion-header {
-    border-bottom: none; /* Remove bottom border for last item */
-  }
+  border-bottom: none; /* Remove bottom border for last item */
+}
 
 /* FAQ section style end */
 
@@ -747,7 +750,8 @@
     flex-direction: column;
   }
 
-  .pre-footer-text, .pre-footer-video {
+  .pre-footer-text,
+  .pre-footer-video {
     max-width: 100%;
   }
 
@@ -939,7 +943,6 @@
 }
 
 /* Responsive adjustments who do we help section */
-
 
 /* Responsive Layout Adjustments contact section */
 @media (max-width: 768px) {
