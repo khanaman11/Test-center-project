@@ -49,6 +49,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
                 </ul>
                 <!-- Login Button on the Right -->
                 <a href="./loginPage.html" class="btn btn-login">Login</a>
@@ -213,7 +216,7 @@
         <div class="row">
             <!-- Left Side: Heading, Text, and Accordion -->
             <div class="col-md-6">
-                <div class="accordion" id="servicesAccordion">
+                <div class="accordion servicesAccordion" id="servicesAccordion">
                     <!-- Accordion Item 1 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -287,7 +290,7 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour"
                                 onclick="showImage(5)">
-                              My world is best
+                                My world is best
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -315,51 +318,56 @@
     <!-- Services Section End -->
 
     <!-- Who do we help Section Start -->
-    <section class="help-section container" id="help">
-        <!-- Header with Title, Description, and Button -->
-        <div class="help-header">
-            <div>
-                <h2 class="help-title">Who Do We Help?</h2>
-                <p class="help-description">Our solutions assist a diverse range of clients in reaching their business goals. .</p>
-            </div>
-            <div>
-                <button class="btn btn-contact">Contact Us</button>
-            </div>
-        </div>
-
-        <!-- Card Row -->
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="help-card">
-                    <img src="./image/img1.jpg" alt="Small Businesses">
-                    <div class="card-body">
-                        <h5 class="card-title">Small Businesses</h5>
-                        <p class="card-text">Helping small businesses grow and scale efficiently with innovative strategies.</p>
-                        <a href="#" class="learn-more-btn">Learn More</a>
-                    </div>
+    <section class="help-section" id="help">
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="help-left">
+                    <h2 class="subheading">Need Assistance?</h2>
+                    <h1 class="heading">Who do we help?</h1>
+                    <h3 class="subheading">Contact us anytime!</h3>
                 </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="help-card">
-                    <img src="./image/img2.jpg" alt="Enterprises">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprises</h5>
-                        <p class="card-text">Providing robust solutions to large enterprises to drive digital transformation.</p>
-                        <a href="#" class="learn-more-btn">Learn More</a>
+                <div class="help-right">
+                    <div class="help-box">
+                        <div class="icon">🛠️</div>
+                        <div class="box-header-container">
+                            <h4 class="box-header">Technical Support</h4>
+                            <button class="box-button">Get Help</button>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need technical help.</span>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need technical help.</span>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need technical help.</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="help-card">
-                    <img src="./image/img3.jpg" alt="Non-Profits">
-                    <div class="card-body">
-                        <h5 class="card-title">Non-Profits</h5>
-                        <p class="card-text">Supporting non-profits with tools and strategies to make a greater impact. and impration</p>
-                        <a href="#" class="learn-more-btn">Learn More</a>
+                    <div class="help-box">
+                        <div class="icon">💬</div>
+                        <div class="box-header-container">
+                            <h4 class="box-header">Customer Service</h4>
+                            <button class="box-button">Contact Us</button>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need customer service.</span>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need customer service.</span>
+                        </div>
+                        <div class="check-icon">
+                            <span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                            <span class="text">I need customer service.</span>
+                        </div>
                     </div>
+                    <button class="btn btn-danger">get in touch</button>
+                    <p class="text-center">or</p>
+                    <div class="text-center">Don't know what model to follow? <a href="#">Contact us</a></div>
                 </div>
             </div>
         </div>
@@ -377,7 +385,7 @@
             <!-- Right Side Form -->
             <div class="col-md-6 d-flex align-items-stretch">
                 <div class="w-100">
-                    <h2>Contact Me</h2>
+                    <h2>Contact Us</h2>
                     <p class="contact-text">Need to discuss something? Feel free to reach out!</p>
 
                     <!-- Contact Form -->
@@ -444,23 +452,29 @@
                         <button type="button" class="send-button" onclick="submitForm()">Send</button>
 
                         <!-- Message Link -->
-                        <p class="message-link" data-bs-toggle="modal" data-bs-target="#messageModal">Write custom message </p>
+                        <p class="message-link" data-bs-toggle="modal" data-bs-target="#messageModal">Write custom
+                            message </p>
                     </form>
 
                     <!-- Message Modal -->
-                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="messageModalLabel">Your Message</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <textarea id="messageText" class="form-control" rows="4" placeholder="Type your message here..."></textarea>
+                                    <textarea id="messageText" class="form-control" rows="4"
+                                        placeholder="Type your message here..."></textarea>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="sendMessage()">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </div>
@@ -470,6 +484,132 @@
         </div>
     </div>
     <!-- Contact Section End -->
+
+    <!-- Frequently Asked Questions start -->
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="faq-heading">Frequently Asked Questions</h2>
+            <p class="faq-subtext">Here are some of the common questions we get asked. If you don't see your question
+                here, feel free to contact us.</p>
+
+            <div class="faq-buttons">
+                <button class="faq-btn">General</button>
+                <button class="faq-btn">Services</button>
+                <button class="faq-btn">Pricing</button>
+                <button class="faq-btn">Support</button>
+            </div>
+
+            <div class="new-faq-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header active">
+                        <span class="accordion-icon-left"><i class="fa-solid fa-circle-question"></i></span>
+                        <!-- Left icon -->
+                        What services do you offer?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content" style="display: block;">
+                        <p>We offer a range of services including web development, business consulting, and data
+                            analysis to help your company succeed.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-regular fa-user"></i></span> <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-solid fa-question"></i></span> <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-regular fa-circle-question"></i></span>
+                        <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-solid fa-user-plus"></i></span>
+                        <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-regular fa-circle-user"></i></span>
+                        <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-regular fa-face-smile"></i></span>
+                        <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-icon-left"><i class="fa-solid fa-user-nurse"></i></span>
+                        <!-- Left icon -->
+                        How can I contact support?
+                        <span class="accordion-icon-right"><i class="fa-solid fa-angle-down"></i></span>
+                        <!-- Right dropdown icon -->
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can reach our support team through email at support@example.com or by calling our
+                            helpline at (123) 456-7890.</p>
+                    </div>
+                </div>
+                <!-- Add more accordion items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions end -->
+
 
     <!-- Footer Section Start -->
     <footer class="footer-section">
@@ -547,7 +687,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 </body>
 

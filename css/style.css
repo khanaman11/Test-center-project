@@ -128,7 +128,7 @@
 
 /* Header section styling */
 .scroll-header h2 {
-  font-size: 38px;
+  font-size: 20px;
   font-weight: bold;
   color: #2a5298;
 }
@@ -298,6 +298,9 @@
   border: none;
   box-shadow: none; /* Remove any shadow, if there is one */
 }
+.servicesAccordion .accordion-header{
+  padding: 0;
+}
 
 .accordion-button {
   color: #333;
@@ -337,93 +340,101 @@
 }
 
 /* who do we help Section Styling  start */
+
 .help-section {
-  padding: 80px 0px;
-  /* background: linear-gradient(135deg, #eff2f5, #d4dee4); */
-  border-radius: 10px;
+  padding: 40px;
+  background-color: #f9f9f9;
 }
 
-.help-header {
+.main-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.help-title {
-  font-size: 38px;
-  font-weight: bold;
-  color: #2a5298;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+.help-left {
+  flex: 1;
+  padding-right: 20px;
 }
 
-.help-description {
-  font-size: 18px;
-  color: #666;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.help-card {
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.help-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-}
-
-.help-card img {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.help-card:hover img {
-  transform: scale(1.05);
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #323232;
-}
-
-.card-text {
-  font-size: 16px;
+.subheading {
+  font-size: 1.2em;
   color: #555;
 }
 
-.learn-more-btn {
-  font-weight: bold;
-  color: #f39c12;
-  text-decoration: underline;
+.heading {
+  font-size: 2.5em;
+  color: #333;
+  margin: 10px 0;
 }
 
-.btn-contact {
-  font-size: 16px;
-  background-color: #f39c12;
-  color: #fff;
+.help-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.help-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.box-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.box-header {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.box-button {
+  padding: 5px 20px;
+  /* background-color: #007bff; */
+  color: #222;
   border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid black;
 }
 
-.btn-contact:hover {
-  background-color: #e67e22;
+.box-button:hover {
+  background-color: #0056b3;
 }
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkmark {
+  font-size: 1em;
+  margin-right: 10px;
+  color: #28a745; /* Green color for checkmark */
+  border-radius: 20px;
+  padding: 0px 2px 2px 2px;
+}
+
+.text {
+  font-size: 1em;
+}
+
 /* who do we help section style end */
 
 /* contact section style  start*/
@@ -492,6 +503,118 @@
   margin-top: 20px;
 }
 /* contact section style end */
+
+/* FAQ section style start */
+
+.faq-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.faq-subtext {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.faq-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.faq-btn {
+  /* background-color: #007bff; */
+  color: #222;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #222;
+  /* transition: background-color 0.3s; */
+}
+
+.faq-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.faq-accordion .accordion-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.new-faq-accordion {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the left */
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* background-color: #f4f4f4; Light background */
+    border: none;
+    border-bottom: 1px solid #ddd; /* Optional separator */
+    transition: background-color 0.3s;
+    gap: 10px; /* Adds space between the icon and text */
+}
+.accordion-icon-left {
+    font-size: 1.2rem;
+    margin-right: 0px;
+}
+.accordion-icon-right {
+    margin-left: auto; /* Pushes the right icon to the far right */
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+.accordion-header.active .accordion-icon-right {
+    transform: rotate(180deg); /* Rotates the icon when the accordion is open */
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;/* Slight hover effect */
+}
+.accordion-icon {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg); /* Rotates the icon when the accordion is open */
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px 20px;
+    background-color: #fff; /* White content background */
+    color: #333; /* Dark text */ /* Removes border line around the content */
+}
+
+.accordion-content p {
+  margin: 0;
+}
+.accordion-item {
+  border: none; /* Removes the border line from the accordion item */
+}
+.accordion-item:last-child .accordion-header {
+    border-bottom: none; /* Remove bottom border for last item */
+  }
+
+/* FAQ section style end */
 
 /* Footer Styling start */
 .footer-section {
@@ -674,19 +797,7 @@
 }
 
 /* Responsive adjustments who do we help section */
-@media (max-width: 768px) {
-  .help-title {
-    font-size: 28px;
-  }
 
-  .help-description {
-    font-size: 16px;
-  }
-
-  .help-card img {
-    height: 200px;
-  }
-}
 
 /* Responsive Layout Adjustments contact section */
 @media (max-width: 768px) {
@@ -707,3 +818,34 @@
     align-items: flex-start;
   }
 }
+
+/* FAQ section responsive start */
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 0.9rem; /* Adjust font size for tablets */
+    padding: 10px 15px;
+  }
+
+  .accordion-icon-left,
+  .accordion-icon-right {
+    font-size: 1rem; /* Adjust icon size for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-header {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start;
+    gap: 5px; /* Reduce gap for smaller devices */
+  }
+
+  .accordion-icon-right {
+    align-self: flex-end; /* Aligns the right icon to the end */
+    margin-left: 0; /* Remove auto margin */
+  }
+
+  .accordion-content {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+}
+/* FAQ section responsive end */

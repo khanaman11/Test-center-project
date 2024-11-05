@@ -67,3 +67,32 @@ function showImage(imageIndex) {
     });
 };
 
+
+// FAQ section script - start
+document.querySelectorAll('.new-faq-accordion').forEach(accordionContainer => {
+    const headers = accordionContainer.querySelectorAll('.accordion-header');
+  
+    headers.forEach(button => {
+      button.addEventListener('click', () => {
+        // Close other accordion contents within the same container
+        headers.forEach(header => {
+          if (header !== button) {
+            header.classList.remove('active');
+            header.nextElementSibling.style.display = 'none';
+          }
+        });
+  
+        // Toggle the clicked accordion content
+        const content = button.nextElementSibling;
+        if (button.classList.contains('active')) {
+          button.classList.remove('active');
+          content.style.display = 'none';
+        } else {
+          button.classList.add('active');
+          content.style.display = 'block';
+        }
+      });
+    });
+  });
+  // FAQ section script - end
+  
