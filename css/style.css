@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .section-backgrond {
-  background-color: #ddd;
+  background-color: #f6f6f6;
 }
 
 /* Navbar Custom Styling */
@@ -345,105 +345,116 @@
 
 /* who do we help Section Styling  start */
 
-.help-section {
-  padding: 40px;
-  background-color: #f9f9f9;
+.who-we-help {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: #F6F6F6; */
 }
 
-.main-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.help-left {
-  flex: 1;
-  padding-right: 20px;
-}
-
-.subheading {
-  font-size: 1rem;
-  color: #555;
-}
-
-.heading {
+.who-we-help h2 {
   font-size: 38px;
+  margin-bottom: 20px;
   color: #2a5298;
   font-weight: bold;
-  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.help-right {
-  flex: 1;
+.who-we-help p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Card Container */
+.help-cards {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
-.help-box {
-  background-color: #f6f6f6;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.icon {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.box-header-container {
-  display: flex;
-  justify-content: space-between;
+/* Card Styles */
+.help-card {
+  position: relative;
   width: 100%;
-  align-items: center;
+  max-width: 350px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.box-header {
-  font-size: 1.5em;
-  margin: 10px 0;
+.help-card:hover {
+  transform: translateY(-10px);
 }
 
-.box-button {
-  padding: 5px 20px;
-  /* background-color: #007bff; */
-  color: #222;
+/* Card Heading (Top) */
+.card-heading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  margin: 0;
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Card Content (Bottom) */
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card-content p {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f39c12;
   border: none;
   border-radius: 20px;
+  color: #fff;
   cursor: pointer;
-  border: 1px solid black;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
-.box-button:hover {
-  background-color: #0056b3;
+.card-btn:hover {
+  background: #ff4b2b;
 }
 
-.check-icon {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .help-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.checkmark {
-  font-size: 1em;
-  margin-right: 10px;
-  color: #28a745; /* Green color for checkmark */
-  border-radius: 20px;
-  padding: 0px 2px 2px 2px;
-}
+  .help-card {
+    max-width: 100%;
+    height: 300px;
+  }
 
-.text {
-  font-size: 1em;
-}
-.get-touch-btn {
-  background-color: #f39c12;
-}
-.get-touch-btn:hover {
-  background-color: #fd7e14;
+  .card-heading {
+    font-size: 1.3rem;
+  }
 }
 
 /* who do we help section style end */
@@ -473,6 +484,9 @@
 .contact-form {
   margin-bottom: 30px;
   height: 100%; /* Ensures equal height */
+}
+.form-control {
+  padding: 10px 20px;
 }
 
 .contact-image {
@@ -515,6 +529,30 @@
 }
 /* contact section style end */
 
+/* why us section style start */
+.stats-box {
+  height: 200px;
+}
+
+.stats-box .position-absolute h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stats-box .position-absolute small {
+  font-size: 0.85rem;
+  color: #666;
+}
+#heading-why-us {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+/* why us section style end  */
+
 /* FAQ section style start */
 
 .faq-section {
@@ -528,7 +566,6 @@
   font-size: 38px;
   color: #2a5298;
   font-weight: bold;
-  
 }
 
 .faq-subtext {
@@ -586,10 +623,14 @@
   border-bottom: 1px solid #ddd; /* Optional separator */
   transition: background-color 0.3s;
   gap: 10px; /* Adds space between the icon and text */
+  background: transparent;
 }
 .accordion-icon-left {
   font-size: 1.2rem;
   margin-right: 0px;
+  border: 1px solid #ddd;
+  padding: 2px 7px;
+  border-radius: 5px;
 }
 .accordion-icon-right {
   margin-left: auto; /* Pushes the right icon to the far right */
