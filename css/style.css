@@ -9,6 +9,10 @@
 .section-backgrond {
   background-color: #f6f6f6;
 }
+.img-radius{
+  border-radius: 10px;
+}
+
 
 /* Navbar Custom Styling */
 .navbar {
@@ -40,7 +44,7 @@
   background-color: #f39c12;
   color: white;
   font-weight: bold;
-  padding: 6px 20px;
+  padding: 10px 20px;
   border: none;
   transition: background-color 0.5s;
 }
@@ -130,10 +134,22 @@
 }
 
 /* Header section styling */
-.scroll-header h2 {
-  font-size: 20px;
+.scroll-header {
+  font-size: 1rem;
   font-weight: bold;
   color: #2a5298;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.scroll-header-founder{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2a5298;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 /* Intro section with text and button */
@@ -162,7 +178,7 @@
 .scroll-content {
   display: inline-flex;
   animation: scroll 20s linear infinite;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 /* Style for each item */
@@ -203,7 +219,7 @@
   font-size: 38px;
   color: #2a5298;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 /* Heading and Button Row */
@@ -228,6 +244,7 @@
   border-radius: 4px;
   transition: background-color 0.3s;
   font-weight: bold;
+  padding: 10px 20px;
 }
 
 .who-we-are-header .btn:hover {
@@ -254,6 +271,14 @@
   font-size: 3rem;
   color: #f39c12;
   margin-bottom: 15px;
+  
+}
+.card-icon i{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 24px;
 }
 
 .card-custom h4 {
@@ -278,13 +303,13 @@
   font-size: 38px;
   color: #2a5298;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .services-content p {
   font-size: 1rem;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .services-btn {
   display: flex;
@@ -359,7 +384,7 @@
   margin-bottom: 20px;
   color: #2a5298;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform:capitalize ;
 }
 
 .who-we-help p {
@@ -405,6 +430,7 @@
   /* background: rgba(0, 0, 0, 0.6); */
   padding: 5px 10px;
   border-radius: 5px;
+  z-index: 1;
 }
 
 /* Card Content (Bottom) */
@@ -417,6 +443,7 @@
   padding: 15px;
   border-radius: 8px;
   text-align: left;
+  z-index: 1;
 }
 
 .card-content p {
@@ -498,6 +525,9 @@
 .card-body{
   cursor: pointer;
 }
+.selected-card {
+  border: 1px solid #2a5298; /* Add 1px border when selected */
+}
 
 
 .card-title {
@@ -537,28 +567,40 @@
 /* contact section style end */
 
 /* why us section style start */
-.stats-box {
-  height: 200px;
+.stat-item {
+  text-align: center;
 }
 
-.stats-box .position-absolute h5 {
-  font-size: 1.3rem;
+.stats-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.stat-number {
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 5px;
   color: #2a5298;
 }
 
-.stats-box .position-absolute small {
-  font-size: 0.85rem;
-  color: #666;
+.stat-label {
+  font-size: 14px;
+  color: #666666;
 }
-#heading-why-us {
+
+.why-us-heading {
   font-size: 38px;
+  color: #2a5298;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #2a5298;
 }
 
+.image-container img {
+  width: 100%;
+  height: auto;
+  min-height: 100%; /* Ensures the image grows with the left content */
+  object-fit: cover; /* Maintains aspect ratio */
+}
 /* why us section style end  */
 
 /* FAQ section style start */
@@ -615,7 +657,8 @@
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #ddd;
 }
 
 .accordion-header {

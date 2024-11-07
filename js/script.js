@@ -2,16 +2,21 @@
 // script code for contact section .
 
 function toggleCard(card) {
-    // Get the checkbox within the clicked card
-    const checkbox = card.querySelector('input[type="checkbox"]');
+  // Get the checkbox within the clicked card
+  const checkbox = card.querySelector('input[type="checkbox"]');
 
-    // Deselect all checkboxes
-    document.querySelectorAll('.contact-form input[type="checkbox"]').forEach(cb => cb.checked = false);
+  // Deselect all checkboxes and remove the border
+  document.querySelectorAll('.contact-form .card').forEach(c => {
+    const cb = c.querySelector('input[type="checkbox"]');
+    if (cb) cb.checked = false;
+    c.classList.remove('selected-card');
+  });
 
-    // Select the clicked checkbox
-    if (checkbox) {
-        checkbox.checked = true;
-    }
+  // Select the clicked checkbox and add border
+  if (checkbox) {
+    checkbox.checked = true;
+    card.classList.add('selected-card');
+  }
 }
 
 function submitForm() {
@@ -96,3 +101,20 @@ document.querySelectorAll('.new-faq-accordion').forEach(accordionContainer => {
   });
   // FAQ section script - end
   
+// why us section style.
+ const counters = document.querySelectorAll('.stat-number');
+ counters.forEach(counter => {
+   counter.innerText = '0 +';
+   const updateCounter = () => {
+     const target = +counter.getAttribute('data-target');
+     const current = +counter.innerText.split(' ')[0];
+     const increment = target / 100; // adjust speed
+     if (current < target) {
+       counter.innerText = `${Math.ceil(current + increment)} +`;
+       setTimeout(updateCounter, 10); // adjust delay
+     } else {
+       counter.innerText = `${target} +`;
+     }
+   };
+   updateCounter();
+ });

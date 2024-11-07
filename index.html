@@ -35,9 +35,6 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our founder">Our Founder</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
@@ -85,6 +82,7 @@
     <section class="infinite-scroll-container pt-0 pb-0" id="our founder">
         <div class="container">
             <!-- Scrolling Content -->
+            <h2 class="scroll-header h2">Brands we've partnered with</h2>
             <div class="scroll-content">
                 <!-- Original Items -->
                 <div class="scroll-item">
@@ -127,14 +125,13 @@
             </div>
         </div>
     </section>
-
     <!-- Infinite Scroll Section end-->
 
 
     <!-- Who Are We Section Start -->
     <section class="who-we-are container" id="about">
         <!-- Heading and Button Row -->
-        <p class="btn border-dark rounded-pill bg-white">sub heading</p>
+        <p class="btn border-dark rounded-pill bg-white">About</p>
         <h2 class="about">Who Are We ?</h2>
         <div class="who-we-are-header">
             <p class="w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto repudiandae quam
@@ -199,7 +196,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="services-content">
-                        <p class="btn border-dark rounded-pill bg-white">sub heading</p>
+                        <p class="btn border-dark rounded-pill bg-white">Services</p>
                         <h2>Our Services</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, maiores impedit! Quis, maxime!
                             Consequatur enim eveniet ipsa explicabo perspiciatis. Maiores aliquid voluptatem aut, ad
@@ -301,6 +298,22 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Accordion Item 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFour"
+                                    onclick="showImage(6)">
+                                    This is the time for tecgnologies
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#servicesAccordion">
+                                <div class="accordion-body">
+                                    Improve your website’s search engine ranking with our SEO services.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -312,6 +325,7 @@
                         <img src="./image/img3.jpg" alt="Digital Marketing" id="image3"> <!-- Image 3 -->
                         <img src="./image/img4.jpg" alt="SEO Optimization" id="image4"> <!-- Image 4 -->
                         <img src="./image/web dev.jpg" alt="SEO Optimization" id="image4"> <!-- Image 5 -->
+                        <img src="./image/office girl.jpeg" alt="SEO Optimization" id="image4"> <!-- Image 5 -->
                     </div>
                 </div>
             </div>
@@ -327,45 +341,148 @@
         <div class="help-cards">
             <!-- Card 1 -->
             <div class="help-card" style="background-image: url('./image/office\ boy.jpeg');">
+                <div class="overlay"></div>
                 <h3 class="card-heading">Individuals</h3>
                 <div class="card-content">
                     <p>Providing personalized solutions to empower individuals in their journey.</p>
-                    <button class="card-btn">Learn More</button>
+                    <button class="card-btn">Partner with us</button>
                 </div>
             </div>
 
             <!-- Card 2 -->
             <div class="help-card" style="background-image: url('./image/office\ girl.jpeg');">
+                <div class="overlay"></div>
                 <h3 class="card-heading">Small Businesses</h3>
                 <div class="card-content">
                     <p>Helping small businesses grow and thrive in competitive markets.</p>
-                    <button class="card-btn">Learn More</button>
+                    <button class="card-btn">Partner with us</button>
                 </div>
+
             </div>
 
             <!-- Card 3 -->
             <div class="help-card" style="background-image: url('./image/office\ metting.jpeg');">
+                <div class="overlay"></div>
                 <h3 class="card-heading">Enterprises</h3>
                 <div class="card-content">
                     <p>Supporting enterprises in achieving lasting impact and innovation.</p>
-                    <button class="card-btn">Learn More</button>
+                    <button class="card-btn">Partner with us</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- Who do we help Section End -->
+ 
 
-    <!-- Contact Section Start -->
-    <div class="section-backgrond">
+    <!-- Why Us section start -->
+    <section class="why-us py-5 section-backgrond" id="whyus">
+        <div class="container">
+            <div class="row">
+                <!-- Left Part -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <p class="btn border-dark rounded-pill bg-white">Why Us?</p>
+                    <h2 class="mb-3 why-us-heading" id="heading-why-us">What makes us special</h2>
+                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore hic velit tempore consequatur distinctio culpa dicta atque dolores alias incidunt unde aut, eius suscipit recusandae blanditiis nostrum pariatur quaerat asperiores laudantium sed. Debitis laudantium ipsam labore facilis repellat, ipsum corporis. Fugiat iusto exercitationem maxime blanditiis aperiam vitae numquam autem nulla?
+                        !</p>
+
+                    <!-- Stats Box -->
+                    <div class="container d-flex justify-content-center align-items-center border p-3 mt-5 stats-box">
+                        <div class="w-100">
+                            <div class="row">
+                                <!-- Years in Business -->
+                                <div class="col-md-4 mb-5">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="10">0 +</div>
+                                        <div class="stat-label">Years in Business</div>
+                                    </div>
+                                </div>
+
+                                <!-- Happy Clients -->
+                                <div class="col-md-4 mb-5">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="150">0 +</div>
+                                        <div class="stat-label">Happy Clients</div>
+                                    </div>
+                                </div>
+
+                                <!-- Professionals -->
+                                <div class="col-md-4 mb-5">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="25">0 +</div>
+                                        <div class="stat-label">Professionals</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Amazing Projects -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="50">0 +</div>
+                                        <div class="stat-label">Amazing Projects</div>
+                                    </div>
+                                </div>
+
+                                <!-- Done Projects -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="30">0 +</div>
+                                        <div class="stat-label">Done Projects</div>
+                                    </div>
+                                </div>
+
+                                <!-- Pending Projects -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number" data-target="5">0 +</div>
+                                        <div class="stat-label">Pending Projects</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Part (Image) -->
+                <div class="col-lg-6 image-container d-flex align-items-start">
+                    <img src="./image/office boy.jpeg" alt="Why Us Image" class="img-fluid img-radius shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Us section end -->
+
+    <!-- Our founder section start -->
+    <section class="infinite-scroll-container" id="our founder">
+        <div class="container">
+            <!-- Heading and Intro Section -->
+            <div class="row ">
+                <div class="col-md-8 scroll-header-founder">
+                    <p class="btn border-dark rounded-pill">Founder</p>
+                    <h2 class="mb-4">Word from our Founder</h2>
+                </div>
+                <div class="col-md-8 d-flex justify-content-start align-items-end">
+                    <p class="intro-text">Explore our range of services designed to cater.</p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-md-end align-items-center">
+                    <button class="scroll-btn btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our founder section end -->
+
+     <!-- Contact Section Start -->
+     <div class="section-backgrond">
         <div class="container contact-section" id="contact">
             <div class="row">
                 <!-- Left Side Image -->
-                <div class="col-md-6 mb-4 d-flex align-items-stretch">
+                <div class="col-md-6 mb-4 d-flex align-items-stretch pe-4">
                     <img src="./image/img3.jpg" alt="Contact Us" class="img-fluid contact-image">
                 </div>
 
                 <!-- Right Side Form -->
-                <div class="col-md-6 d-flex align-items-stretch">
+                <div class="col-md-6 d-flex align-items-stretch ps-4">
                     <div class="w-100">
                         <p class="btn border-dark rounded-pill bg-white">sub heading</p>
                         <h2>Contact Us</h2>
@@ -579,70 +696,6 @@
         </div>
     </section>
     <!-- Frequently Asked Questions end -->
-
-    <!-- Why Us section start -->
-    <section class="why-us py-5 section-backgrond" id="whyus">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Part -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <p class="btn border-dark rounded-pill bg-white">sub heading</p>
-                    <h2 class="mb-3" id="heading-why-us">Why Us?</h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eligendi tenetur eos!
-                        Quos deleniti neque consequatur fugit veniam sint non? Perferendis a, unde veritatis aperiam
-                        delectus minima molestias sapiente velit labore modi itaque quibusdam est consequatur explicabo
-                        architecto earum. Rem, fuga ut aperiam optio doloribus nihil dolor quas accusantium earum!</p>
-                    <button class="scroll-btn btn mb-4">See why us</button>
-
-                    <!-- Stats Box -->
-                    <div class="position-relative p-4 bg-light rounded border stats-box">
-                        <div class="position-absolute top-0 start-0 p-3 text-center">
-                            <h5 class=" fs-1">10+</h5>
-                            <small>Operated Years</small>
-                        </div>
-                        <div class="position-absolute top-0 end-0 p-3 text-center">
-                            <h5 class=" fs-1">500+</h5>
-                            <small>Happy Clients</small>
-                        </div>
-                        <div class="position-absolute bottom-0 start-0 p-3 text-center">
-                            <h5 class=" fs-1">50+</h5>
-                            <small>Professionals</small>
-                        </div>
-                        <div class="position-absolute bottom-0 end-0 p-3 text-center">
-                            <h5 class=" fs-1">300+</h5>
-                            <small>Amazing Projects</small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Part (Image) -->
-                <div class="col-lg-6">
-                    <img src="./image/office girl.jpeg" alt="Why Us Image" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Why Us section end -->
-
-    <!-- Our founder section start -->
-    <section class="infinite-scroll-container" id="our founder">
-        <div class="container">
-            <!-- Heading and Intro Section -->
-            <div class="row ">
-                <div class="col-md-8 scroll-header">
-                    <p class="btn border-dark rounded-pill">sub heading</p>
-                    <h2>Word from our Founder</h2>
-                </div>
-                <div class="col-md-8 d-flex justify-content-start align-items-end">
-                    <p class="intro-text">Explore our range of services designed to cater.</p>
-                </div>
-                <div class="col-md-4 d-flex justify-content-md-end align-items-center">
-                    <button class="scroll-btn btn">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our founder section end -->
 
     <!-- banner section start -->
     <section class="pre-footer-section my-5">
