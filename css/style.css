@@ -500,7 +500,7 @@
 .contact-section h2 {
   font-size: 38px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   color: #2a5298;
 }
 
@@ -592,7 +592,7 @@
   font-size: 38px;
   color: #2a5298;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .image-container img {
@@ -612,7 +612,7 @@
 
 .faq-heading {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-size: 38px;
   color: #2a5298;
   font-weight: bold;
@@ -620,7 +620,7 @@
 
 .faq-subtext {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   color: #666;
 }
 
