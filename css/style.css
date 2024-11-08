@@ -16,19 +16,19 @@
 
 /* Navbar Custom Styling */
 .navbar {
-  background-color: #2c3e50; /* Dark background */
+  background-color: #fff; /* Dark background */
   /* padding: 15px; */
 }
 
 /* Logo Customization */
 .navbar-brand img {
-  width: 90px;
-  height: 80px;
+  width: 70px;
+  height: 50px;
 }
 
 /* Navigation Links */
 .navbar-nav .nav-link {
-  color: white !important;
+  color: #222;
   font-size: 1rem;
   margin-right: 20px;
   transition: color 0.3s;
@@ -256,16 +256,18 @@
 
 /* Card Styling */
 .card-custom {
-  padding: 20px;
+  padding: 40px;
   background-color: #fff;
   border-radius: 8px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   text-align: center;
   transition: transform 0.3s;
+  border: none;
 }
 
 .card-headings{
   font-size: 24px !important;
+  
 }
 
 .card-border-top {
@@ -295,7 +297,7 @@
 .card-text {
   font-size: 1rem;
   color: #666;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   text-align: left;
 }
 
@@ -328,7 +330,7 @@
 .card-custom h4 {
   font-size: 1rem;
   font-weight: bold;
-  margin: 11px 0px 24px 0px;
+  margin: 24px 0px;
   color: #2a5298;
   text-align: left;
 }
@@ -533,6 +535,89 @@
 }
 
 /* who do we help section style end */
+
+
+/* Our founder section style start */
+.founder-section {
+  padding: 60px 0;
+  /* background-color: #f9f9f9; */
+}
+
+.founder-subheading {
+  /* font-size: 1.2rem;
+  color: #888;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; */
+}
+
+.founder-heading {
+  font-size: 2.5rem;
+  color: #2a5298;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.founder-image-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  
+}
+
+.founder-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  height: 100%; /* Make the image fill the container */
+}
+
+.founder-details {
+  font-size: 1rem;
+  color: #666;
+}
+
+.founder-name {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: rgba(249, 130, 44, 1);
+  margin-bottom: 24px;
+}
+
+.founder-title {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.founding-year {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.founder-text {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.awards-link a {
+  color: #f39c12;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.awards-link a:hover {
+  text-decoration: underline;
+}
+/* Our founder section style end */
 
 /* contact section style  start*/
 .contact-section {
@@ -908,118 +993,74 @@
 
 /* Footer Styling start */
 .footer-section {
-  background-color: #2c3e50;
-  color: #ffffff;
-  padding: 60px 20px;
-  position: relative;
-  overflow: hidden;
+  background-color: #f6f6f6;
+  color: #222;
+  padding: 40px 0;
 }
 
-/* Animated Background */
-.footer-background {
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: radial-gradient(circle, #444, transparent 70%);
-  animation: rotateBackground 20s linear infinite;
-  opacity: 0.3;
+.footer-subscribe {
+  padding-bottom: 20px;
 }
 
-@keyframes rotateBackground {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-subscribe input {
+  border-radius: 0;
+  border: none;
+  border: px solid #f39c12;
+}
+
+.footer-subscribe .btn-subscribe {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px 20px;
+}
+
+.footer-subscribe .btn-subscribe:hover {
+  background-color: #e67e22;
 }
 
 .footer-logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #f39c12;
 }
-.footer-logo img {
-  width: 150px;
+
+.footer-border {
+  border-top: 1px solid #555;
+  margin: 20px 0;
 }
 
-/* Links & Buttons */
-.footer-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav ul li {
+.footer-columns h5 {
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #f39c12;
 }
 
-.footer-nav ul li a {
-  color: #ffffff;
+.footer-columns a {
+  color: #bbb;
   text-decoration: none;
-  transition: color 0.3s ease;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.footer-nav ul li a:hover {
+.footer-columns a:hover {
   color: #f39c12;
-  transform: scale(1.05);
+  text-decoration: underline;
 }
 
-/* Social Media Icons */
-.social-icons a {
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin-right: 15px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #f39c12;
-  transform: scale(1.2);
-}
-
-/* Subscription Form */
-.subscription-form input {
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  width: 100%;
-  margin-bottom: 10px;
-  font-size: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.subscription-form input:focus {
-  transform: scale(1.03);
-  box-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
-}
-
-.subscribe-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #f39c12;
-  color: white;
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.subscribe-button:hover {
-  background-color: #333;
-}
-
-/* Footer Bottom */
 .footer-bottom {
   padding-top: 20px;
-  font-size: 0.9rem;
-  color: #cccccc;
-  border-top: 1px solid #555;
-  text-align: center;
+}
+
+.footer-bottom a {
+  color: #bbb;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-bottom a:hover {
+  color: #f39c12;
 }
 /* footer styling end */
 
