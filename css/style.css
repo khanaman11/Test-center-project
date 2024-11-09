@@ -193,16 +193,16 @@
 .text-center-btn {
   background-color: rgba(249, 130, 44, 1);
   position: absolute;
-  top: 80px;
-  left: 170px;
+  top: 20%;
+  left: 16%;
   border-radius: 20px;
   border: none;
 }
 
 .view-intro-btn {
-  top: 377px;
+  top: 57%;
   position: absolute;
-  left: 53px;
+  left: 7%;
   background: white;
   color: black;
   border: none;
