@@ -9,38 +9,50 @@
 .section-backgrond {
   background-color: #f6f6f6;
 }
-.img-radius{
+.img-radius {
   border-radius: 10px;
 }
 
+/*//////////////////////////////////////// Navbar Custom Styling start /////////////////////////////////// */
 
-/* Navbar Custom Styling */
 .navbar {
-  background-color: #fff; /* Dark background */
-  /* padding: 15px; */
+  background-color: #fff;
 }
 
-/* Logo Customization */
 .navbar-brand img {
-  width: 70px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
 }
 
-/* Navigation Links */
 .navbar-nav .nav-link {
   color: #222;
   font-size: 1rem;
-  margin-right: 20px;
   transition: color 0.3s;
 }
 
-/* Hover Effects on Links */
 .navbar-nav .nav-link:hover {
-  color: #f39c12 !important; /* Gold color on hover */
+  color: #f39c12 !important;
 }
 
-/* Login Button Styling */
 .btn-login {
+  color: #f39c12;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.btn-login:hover {
+  background-color: #f39c12;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.btn-signin {
   background-color: #f39c12;
   color: white;
   font-weight: bold;
@@ -49,82 +61,197 @@
   transition: background-color 0.5s;
 }
 
-.btn-login:hover {
-  background-color: #e67e22; /* Darker gold on hover */
+.btn-signin:hover {
+  background-color: #e67e22;
 }
 
-/* Hero Section Styling */
-.hero-section {
+/* Grey background for navbar on small screens */
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #e0e0e0; /* Grey background on small screens */
+  }
+
+  /* Center links on smaller screens */
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Right alignment for links on large screens */
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+/* ///////////////////////////////////////////// Navbar styling End /////////////////////////////// */
+
+/* ////////////////////////////////////////// Hero Section Styling start ///////////////////////////*/
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
   position: relative;
-  width: 100%;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
+  overflow: hidden; /* Prevents overflow from pseudo-element */
 }
 
-/* Fullscreen Video */
-.hero-section video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-/* Dark Overlay with Shadow Layer */
-.hero-section::before {
-  content: "";
+.banner-section::before,
+.banner-section::after {
+  content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  bottom: 0;
+  width: 50%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.7); /* Shadow layer */
-  z-index: 2;
+  z-index: -1;
 }
 
-/* Text in the Center of Hero Section */
-.hero-content {
+.banner-section::before {
+  left: 0;
+  background-color: rgba(249, 130, 44, 0.1); /* First 50% color with lighter opacity */
+}
+
+.banner-section::after {
+  right: 0;
+  background-color: rgba(59, 146, 226, 0.1); /* Remaining 50% color with lighter opacity */
+}
+
+
+
+/* .banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 130, 44, 0.2),
+    rgba(59, 146, 226, 0.2)
+  );
+  position: relative;
+} */
+
+.banner-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}
+
+.left-top {
+  top: 10%;
+  left: 5%;
+}
+
+.left-bottom {
+  bottom: 10%;
+  left: 5%;
+}
+
+.right-bottom {
+  bottom: 10%;
+  right: 5%;
+}
+
+.banner-content {
   text-align: center;
-  color: white;
-  z-index: 3;
+  max-width: 600px;
 }
 
-.hero-content h1 {
-  font-size: 3.125rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin: 20px 0;
-}
-
-.hero-content .btn-cta {
-  background-color: #f39c12;
-  color: white;
-  /* padding: 12px 30px; */
-  border: none;
+.banner-subheading {
   font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #222;
+  border-radius: 20px;
+}
+
+.banner-heading {
+  font-size: 44px;
   font-weight: bold;
-  transition: background-color 0.3s;
+  margin-bottom: 15px;
+  color: #222;
 }
 
-.hero-content .btn-cta:hover {
-  background-color: #e67e22;
-  color: white;
+.banner-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #222;
 }
 
-/* Container for the scrolling section start */
+.banner-buttons .btn {
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btn-partner {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.btn-demo {
+  /* background-color: #f39c12; */
+  border: 1px solid #222;
+  color: #222;
+}
+
+.text-center-btn {
+  background-color: rgba(249, 130, 44, 1);
+  position: absolute;
+  top: 80px;
+  left: 170px;
+  border-radius: 20px;
+  border: none;
+}
+
+.view-intro-btn {
+  top: 321px;
+  position: absolute;
+  left: 75px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+}
+
+.assessment-company-btn {
+  position: absolute;
+  right: 13%;
+  top: 70%;
+  border-radius: 20px;
+  background: #2980b9;
+  border: 0;
+}
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-content .btn-cta {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+/* //////////////////////////////////////// Hero section styling End ///////////////////////////// */
+
+
+/* /////////////////////////////////////// scrolling section styling start ///////////////////////*/
 .infinite-scroll-container {
   overflow: hidden;
   white-space: nowrap;
@@ -133,7 +260,6 @@
   padding: 80px 0;
 }
 
-/* Header section styling */
 .scroll-header {
   font-size: 1rem;
   font-weight: bold;
@@ -143,7 +269,7 @@
   margin-top: 40px;
   margin-bottom: 0px;
 }
-.scroll-header-founder{
+.scroll-header-founder {
   font-size: 1.6rem;
   font-weight: bold;
   color: #2a5298;
@@ -152,7 +278,6 @@
   margin-bottom: 0px;
 }
 
-/* Intro section with text and button */
 .intro-text {
   font-size: 16px;
   color: #666;
@@ -174,14 +299,14 @@
   color: #222;
 }
 
-/* Scrolling content */
+
 .scroll-content {
   display: inline-flex;
   animation: scroll 20s linear infinite;
   /* padding-top: 30px; */
 }
 
-/* Style for each item */
+
 .scroll-item {
   display: flex;
   align-items: center;
@@ -209,7 +334,9 @@
   }
 }
 
-/* Section Who are we start */
+/*/////////////////////////////////////////////// scrolling section styling End ///////////////////  */
+
+/*//////////////////////////////////////////// About us Section styling start ///////////////////////*/
 .who-we-are {
   padding: 80px 0;
   /* background-color: #f8f9fa; */
@@ -223,7 +350,6 @@
   margin-bottom: 24px;
 }
 
-/* Heading and Button Row */
 .who-we-are-header {
   display: flex;
   justify-content: space-between;
@@ -254,7 +380,7 @@
   color: #222;
 }
 
-/* Card Styling */
+
 .card-custom {
   padding: 40px;
   background-color: #fff;
@@ -265,9 +391,8 @@
   border: none;
 }
 
-.card-headings{
+.card-headings {
   font-size: 24px !important;
-  
 }
 
 .card-border-top {
@@ -279,8 +404,6 @@
 
 .card-custom:hover .card-border-top {
   background-color: rgba(249, 130, 44, 1);
-  ;
-  
 }
 
 .card-subheading {
@@ -290,9 +413,9 @@
   margin-bottom: 5px;
   text-align: left;
 }
-.card-custom:hover .card-subheading{
+.card-custom:hover .card-subheading {
   color: #222;
-} 
+}
 
 .card-text {
   font-size: 1rem;
@@ -316,7 +439,6 @@
   font-size: 3rem;
   color: #f39c12;
   margin-bottom: 15px;
-
 }
 
 .card-icon i {
@@ -334,20 +456,22 @@
   color: #2a5298;
   text-align: left;
 }
-.card-custom h4 span{
+.card-custom h4 span {
   color: rgba(249, 130, 44, 1);
 }
 
 .card-custom p {
   color: #777;
 }
-/* Services Section Styling */
+/* /////////////////////////////////////////// About us Section styling End ///////////////////////////  */
+
+/*//////////////////////////////////////////// Services Section Styling  start //////////////////////////*/
 .services-section {
   padding: 80px 0;
   /* background-color: #f4f4f4; */
 }
 
-/* Left Side (Text + Accordion) */
+
 .services-content h2 {
   font-size: 38px;
   color: #2a5298;
@@ -375,7 +499,7 @@
 .accordion .accordion-header,
 .accordion .accordion-body {
   border: none;
-  box-shadow: none; /* Remove any shadow, if there is one */
+  box-shadow: none; 
 }
 .servicesAccordion .accordion-header {
   padding: 0;
@@ -391,7 +515,7 @@
   color: #f39c12;
 }
 
-/* Right Side (Image Display) */
+
 .image-display {
   position: relative;
   width: 100%;
@@ -399,7 +523,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  min-height: 300px; /* Ensures consistent height */
+  min-height: 300px; 
 }
 
 .image-display img {
@@ -417,9 +541,9 @@
 .image-display img.active {
   opacity: 1;
 }
+/* ///////////////////////////////  Services Section Styling End ///////////////////////////////// */
 
-/* who do we help Section Styling  start */
-
+/* ////////////////////////////// who do we help Section Styling start ////////////////////////////*/
 .who-we-help {
   text-align: center;
   padding: 60px 20px;
@@ -433,7 +557,7 @@
   margin-bottom: 20px;
   color: #2a5298;
   font-weight: bold;
-  text-transform:capitalize ;
+  text-transform: capitalize;
 }
 
 .who-we-help p {
@@ -442,7 +566,7 @@
   margin-bottom: 40px;
 }
 
-/* Card Container */
+
 .help-cards {
   display: flex;
   flex-wrap: wrap;
@@ -450,7 +574,7 @@
   justify-content: center;
 }
 
-/* Card Styles */
+
 .help-card {
   position: relative;
   width: 100%;
@@ -469,7 +593,7 @@
   transform: translateY(-10px);
 }
 
-/* Card Heading (Top) */
+
 .card-heading {
   position: absolute;
   top: 20px;
@@ -482,7 +606,7 @@
   z-index: 1;
 }
 
-/* Card Content (Bottom) */
+
 .card-content {
   position: absolute;
   bottom: 20px;
@@ -534,23 +658,24 @@
   }
 }
 
-/* who do we help section style end */
+/* ///////////////////////////////////// who do we help section styling end //////////////////////////// */
 
-
-/* Our founder section style start */
+/* //////////////////////////////////// Our founder section style start ////////////////////////////////*/
 .founder-section {
   padding: 60px 0;
   /* background-color: #f9f9f9; */
 }
-
-.founder-subheading {
-  /* font-size: 1.2rem;
+.founder-bg{
+  background-color: #fff;
+}
+/* .founder-subheading {
+  font-size: 1.2rem;
   color: #888;
   text-transform: capitalize;
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center; */
-}
+  text-align: center;
+} */
 
 .founder-heading {
   font-size: 2.5rem;
@@ -561,10 +686,10 @@
 }
 
 .founder-image-wrapper {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: stretch;
-  
+  padding: 16px 16px 0px;
 }
 
 .founder-image {
@@ -572,7 +697,9 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  height: 100%; /* Make the image fill the container */
+  /* height: 100%;  */
+  height: auto;
+
 }
 
 .founder-details {
@@ -585,12 +712,15 @@
   font-weight: bold;
   color: rgba(249, 130, 44, 1);
   margin-bottom: 24px;
+  margin-top: 50px;
 }
 
 .founder-title {
   font-size: 1rem;
   color: #888;
   margin-bottom: 10px;
+  background-color: #f6f6f6;
+  padding: 0px 10px;
 }
 
 .founding-year {
@@ -598,6 +728,8 @@
   color: #555;
   font-style: italic;
   margin-bottom: 20px;
+  background-color: #f6f6f6;
+  padding: 0px 10px;
 }
 
 .founder-text {
@@ -612,14 +744,16 @@
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
+  padding: 30px 0px;
+  display: block;
 }
 
 .awards-link a:hover {
   text-decoration: underline;
 }
-/* Our founder section style end */
+/* ///////////////////////////////////////// Our founder section style end /////////////////////////////*/
 
-/* contact section style  start*/
+/*///////////////////////////////////////// contact section style start ////////////////////////////////*/
 .contact-section {
   padding: 80px 0;
   /* background-color: #f9f9f9; */
@@ -643,24 +777,23 @@
 
 .contact-form {
   margin-bottom: 30px;
-  height: 100%; /* Ensures equal height */
+  height: 100%; 
 }
 .form-control {
   padding: 10px 20px;
 }
 
 .contact-image {
-  height: 100%; /* Ensures equal height */
-  object-fit: cover; /* Ensures the image covers the area nicely */
+  height: 100%; 
+  object-fit: cover; 
   border-radius: 10px;
 }
-.card-body{
+.card-body {
   cursor: pointer;
 }
 .selected-card {
-  border: 1px solid #2a5298; /* Add 1px border when selected */
+  border: 1px solid #2a5298; 
 }
-
 
 .card-title {
   display: flex;
@@ -696,9 +829,9 @@
   text-align: center;
   margin-top: 20px;
 }
-/* contact section style end */
+/*////////////////////////////////////////// contact section style end ////////////////////////////////*/
 
-/* why us section style start */
+/*////////////////////////////////////////// why us section style start ////////////////////////////// */
 .stat-item {
   text-align: center;
 }
@@ -706,7 +839,7 @@
 .stats-box {
   border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: white;
+  background-color: #F6F6F6;
 }
 
 .stat-number {
@@ -730,13 +863,12 @@
 .image-container img {
   width: 100%;
   height: auto;
-  min-height: 100%; /* Ensures the image grows with the left content */
-  object-fit: cover; /* Maintains aspect ratio */
+  min-height: 100%;
+  object-fit: cover;
 }
-/* why us section style end  */
+/*//////////////////////////////////////// why us section style end  //////////////////////////////////*/
 
-/* FAQ section style start */
-
+/*/////////////////////////////////////// FAQ section style start ////////////////////////////////////*/
 .faq-section {
   padding: 40px;
   /* background-color: #f9f9f9;g */
@@ -852,10 +984,9 @@
   border-bottom: none; /* Remove bottom border for last item */
 }
 
-/* FAQ section style end */
+/* ////////////////////////////////////////// FAQ section style end ///////////////////////////////////*/
 
-/* banner style start */
-/* Background and Overlay */
+/* ////////////////////////////////////////// pre footer style start /////////////////////////////////// */
 .pre-footer-section {
   position: relative;
   padding: 60px 20px;
@@ -943,8 +1074,8 @@
   gap: 15px;
   margin-top: 10px;
 }
-.icons-row .fa-brands:hover{
-  color: #F39C12;
+.icons-row .fa-brands:hover {
+  color: #f39c12;
   cursor: pointer;
 }
 
@@ -956,7 +1087,6 @@
 
 .icon:hover {
   transform: scale(1.2);
-  
 }
 
 /* Right Section Video */
@@ -988,10 +1118,9 @@
     margin-top: 20px;
   }
 }
+/*/////////////////////////////////////// pre footer style End //////////////////////////////////////////*/
 
-/* banner style end */
-
-/* Footer Styling start */
+/*////////////////////////////////////// Footer Styling start ///////////////////////////////////////////*/
 .footer-section {
   background-color: #f6f6f6;
   color: #222;
@@ -1005,7 +1134,7 @@
 .footer-subscribe input {
   border-radius: 0;
   border: none;
-  border: px solid #f39c12;
+  border: 1px solid #f39c12;
 }
 
 .footer-subscribe .btn-subscribe {
@@ -1038,7 +1167,7 @@
 }
 
 .footer-columns a {
-  color: #bbb;
+  color: #222;
   text-decoration: none;
   display: block;
   margin-bottom: 5px;
@@ -1054,7 +1183,7 @@
 }
 
 .footer-bottom a {
-  color: #bbb;
+  color: #222;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -1062,32 +1191,12 @@
 .footer-bottom a:hover {
   color: #f39c12;
 }
-/* footer styling end */
+/*//////////////////////////////////////////// footer styling end /////////////////////////////////////*/
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Responsive Design Navbar section */
-@media (max-width: 991.98px) {
-  .navbar-nav {
-    margin-bottom: 10px;
-  }
-}
 
-/* Responsive hero section */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
 
-  .hero-content p {
-    font-size: 1.2rem;
-  }
-
-  .hero-content .btn-cta {
-    font-size: 1rem;
-    padding: 10px 25px;
-  }
-}
 
 /* Responsive adjustments  scroll section*/
 @media (max-width: 768px) {

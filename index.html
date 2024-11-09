@@ -17,20 +17,19 @@
 <body>
 
     <!--  Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+   
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <!-- Logo on the Left -->
             <a class="navbar-brand" href="#">
                 <img src="./image/logo.png" alt="Company Logo">
             </a>
-            <!-- Toggler for Mobile View -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Links and Login Button -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -41,40 +40,64 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#help">Help</a>
+                        <a class="nav-link" href="#help">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whyus">Why Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#whyus">Why us</a>
-                    </li>
                 </ul>
-                <!-- Login Button on the Right -->
-                <a href="./loginPage.html" class="btn">Login</a>
-                <a href="./loginPage.html" class="btn btn-login">sign in</a>
+
+                <a href="./loginPage.html" class="btn btn-login me-2">Log in</a>
+
+                <div class="dropdown">
+                    <a class="btn btn-signin dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        aria-expanded="false">
+                        Sign In
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
+
     <!--  Navbar End -->
 
     <!-- Hero Section Start -->
-    <section class="hero-section" id="home">
-        <!-- Background Video -->
-        <video autoplay muted loop>
-            <source src="./assets/BookmyTestcenter - MQ.mp4" type="video/mp4"> <!-- Replace with your video -->
-            Your browser does not support the video tag.
-        </video>
+    <section class="banner-section mt-5">
+        <!-- Banner Images without Buttons -->
+        <div>
+            <img src="./image/img4.jpg" alt="Top Left Image" class="banner-image left-top">
+            <button class="btn btn-danger text-center-btn">Test center</button>
+        </div>
+        <div>
+            <img src="./image/img3.jpg" alt="Bottom Left Image" class="banner-image left-bottom">
+            <button class="btn btn-danger view-intro-btn"><i class="fa-solid fa-circle-play me-2"></i>View
+                intro</button>
+        </div>
+        <div>
+            <img src="./image/img2.jpg" alt="Bottom Right Image" class="banner-image right-bottom">
+            <button class="btn btn-danger assessment-company-btn">Assessment company</button>
+        </div>
 
-        <!-- Text in the Center of the Hero Section -->
-        <div class="hero-content">
-            <h1>Welcome to Book My test center</h1>
-            <p>Redefining examination delivery</p>
-            <a href="https://bookmytestcenter.com/" class="btn btn-cta">Get Started</a>
+        <!-- Centered Banner Content -->
+        <div class="banner-content">
+            <h4 class="banner-subheading btn">Partnership slots are now open</h4>
+            <h1 class="banner-heading">India’s largest aggregator of Test Centers</h1>
+            <p class="banner-text">
+                Join us in transforming your experience. We are dedicated to delivering exceptional solutions that
+                support your goals and exceed your.
+            </p>
+            <div class="banner-buttons">
+                <button class="btn btn-partner">Partner with Us</button>
+                <button class="btn btn-demo">Get a Free Demo</button>
+            </div>
         </div>
     </section>
     <!-- Hero Section End -->
@@ -136,7 +159,8 @@
             <p class="btn border-dark rounded-pill bg-white">About us</p>
             <h2 class="about">This is what <span>we do</span></h2>
             <div class="who-we-are-header">
-                <p class="w-50 m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita rem provident omnis, nihil soluta fuga cumque sequi.</p>
+                <p class="w-50 m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum expedita rem
+                    provident omnis, nihil soluta fuga cumque sequi.</p>
                 <a href="https://testpanindia.com/" class="btn">Learn More</a>
             </div>
 
@@ -148,7 +172,8 @@
                         <div class="card-border-top"></div>
                         <h5 class="card-subheading">Innovators</h5>
                         <h4 class="card-headings"><span>Tech Aggregator</span> that enables assessment delivery</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla magnam quibusdam optio quaerat beatae ipsum!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla magnam
+                            quibusdam optio quaerat beatae ipsum!</p>
                         <img src="./image/img4.jpg" alt="Innovators" class="card-image img-fluid rounded">
                     </div>
                 </div>
@@ -160,7 +185,8 @@
                         <h5 class="card-subheading">Team Players</h5>
                         <h4 class="card-headings">India’s <span>largest service provider</span> in the assessment
                             industry</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut assumenda eius inventore possimus harum!</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut
+                            assumenda eius inventore possimus harum!</p>
                         <img src="./image/img2.jpg" alt="Team Players" class="card-image img-fluid rounded">
                     </div>
                 </div>
@@ -172,7 +198,8 @@
                         <h5 class="card-subheading">Global Reach</h5>
                         <h4 class="card-headings"><span>Simplifying the Complex Assessment</span> delivery industry
                         </h4>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta recusandae similique, veniam dignissimos dolor!</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta recusandae
+                            similique, veniam dignissimos dolor!</p>
                         <img src="./image/img2.jpg" alt="Global Reach" class="card-image img-fluid rounded">
                     </div>
                 </div>
@@ -184,7 +211,8 @@
                         <h5 class="card-subheading">Problem Solvers</h5>
                         <h4 class="card-headings">Optimizing <span> Assessment Delivery </span>Through a single,
                             powerful platform</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto modi voluptatem, dolorum animi .</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto
+                            modi voluptatem, dolorum animi .</p>
                         <img src="./image/img1.jpg" alt="Problem Solvers" class="card-image img-fluid rounded">
                     </div>
                 </div>
@@ -201,7 +229,8 @@
                 <div class="services-content">
                     <p class="btn border-dark rounded-pill bg-white">Services</p>
                     <h2>Our Services</h2>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maxime aut assumenda architecto molestiae totam neque quia.</p>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui maxime aut assumenda
+                        architecto molestiae totam neque quia.</p>
                 </div>
             </div>
             <div class="col-6 services-btn">
@@ -337,7 +366,7 @@
         <section class="who-we-help " id="help">
             <h2>Who Do We Help</h2>
             <p>Discover how we support various audiences to achieve their goals.</p>
-    
+
             <div class="help-cards">
                 <!-- Card 1 -->
                 <div class="help-card" style="background-image: url('./image/office\ boy.jpeg');">
@@ -348,7 +377,7 @@
                         <button class="card-btn">Partner with us</button>
                     </div>
                 </div>
-    
+
                 <!-- Card 2 -->
                 <div class="help-card" style="background-image: url('./image/office\ girl.jpeg');">
                     <div class="overlay"></div>
@@ -357,9 +386,9 @@
                         <p>Helping small businesses grow and thrive in competitive markets.</p>
                         <button class="card-btn">Partner with us</button>
                     </div>
-    
+
                 </div>
-    
+
                 <!-- Card 3 -->
                 <div class="help-card" style="background-image: url('./image/office\ metting.jpeg');">
                     <div class="overlay"></div>
@@ -383,7 +412,8 @@
                 <div class="col-lg-6 mb-4 mb-lg-0 pe-4">
                     <p class="btn border-dark rounded-pill bg-white">Why Us?</p>
                     <h2 class="mb-4 why-us-heading" id="heading-why-us">What makes us special</h2>
-                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cum quisquam nulla, amet reiciendis quo adipisci natus corrupti.
+                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cum quisquam nulla,
+                        amet reiciendis quo adipisci natus corrupti.
                         !</p>
 
                     <!-- Stats Box -->
@@ -454,152 +484,154 @@
     <!-- Why Us section end -->
 
     <!-- Our founder section start -->
-   <div class="section-backgrond">
-    <section class="founder-section container">
-        <!-- Section Header -->
-        <div class="text-center">
-            <p class="founder-subheading btn border-dark rounded-pill">Where It All Began</p>
-            <h2 class="founder-heading">Word from our Founder</h2>
-        </div>
-
-        <!-- Founder Content -->
-        <div class="row align-items-stretch">
-            <!-- Left Part: Image -->
-            <div class="col-md-6 founder-image-wrapper pe-4">
-                <img src="./image/CEO.png" alt="Founder Image" class="founder-image">
+    <div class="section-backgrond">
+        <section class="founder-section container">
+            <!-- Section Header -->
+            <div class="text-center">
+                <p class="founder-subheading btn border-dark rounded-pill">Where It All Began</p>
+                <h2 class="founder-heading">Word from our Founder</h2>
             </div>
 
-            <!-- Right Part: Details -->
-            <div class="col-md-6 d-flex flex-column justify-content-center ps-4">
-                <div class="founder-details">
-                    <div class="founder-name">Rajesh Setia</div>
-                    <div class="d-flex mb-4 align-items-center">
-                        <div class="founder-title p-1 bg-white rounded">Founder & CEO - TESTPAN India</div>
-                        <div class="founding-year ms-5 p-1 bg-white rounded">Founding year: 2016</div>
-                    </div>
-                    <div class="founder-text">
-                        Rajesh Setia is a serial entrepreneur and currently the Founder, CEO, and Managing Director of
-                        Testpan India Private Limited. He is responsible for customer reach globally by building
-                        exclusive associates and a channel partner network, and generating online testing business from
-                        corporates, educational bodies & government institutes.
-                    </div>
-                    <div>
-                        Having experience of 25 years in running a full-fledged private limited company, Rajesh was
-                        formerly the Founder, Managing Partner & Head Business Development of Panacea Testing (2012-
-                        2016), where he developed the unique business idea of booking test centers across India on a
-                        turnkey basis while working with all the online assessment companies.
-                    </div>
-                    <div class="awards-link my-5">
-                        <a href="https://testpanindia.com/#about">View Awards & Recognitions<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            <!-- Founder Content -->
+            <div class="row align-items-stretch">
+                <!-- Left Part: Image -->
+                <div class="col-md-6 founder-image-wrapper pe-4 founder-bg">
+                    <img src="./image/CEO.png" alt="Founder Image" class="founder-image">
+                </div>
+
+                <!-- Right Part: Details -->
+                <div class="col-md-6 d-flex flex-column justify-content-center ps-4 founder-bg">
+                    <div class="founder-details">
+                        <div class="founder-name">Rajesh Setia</div>
+                        <div class="d-flex mb-4 align-items-center">
+                            <div class="founder-title   rounded">Founder & CEO - TESTPAN India</div>
+                            <div class="founding-year ms-5   rounded">Founding year: 2016</div>
+                        </div>
+                        <div class="founder-text">
+                            Rajesh Setia is a serial entrepreneur and currently the Founder, CEO, and Managing Director
+                            of
+                            Testpan India Private Limited. He is responsible for customer reach globally by building
+                            exclusive associates and a channel partner network, and generating online testing business
+                            from
+                            corporates, educational bodies & government institutes.
+                        </div>
+                        <div>
+                            Having experience of 25 years in running a full-fledged private limited company, Rajesh was
+                            formerly the Founder, Managing Partner & Head Business Development of Panacea Testing (2012-
+                            2016), where he developed the unique business idea of booking test centers across India on a
+                            turnkey basis while working with all the online assessment companies.
+                        </div>
+                        <div class="awards-link">
+                            <a href="https://testpanindia.com/#about">View Awards & Recognitions<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-   </div>
+        </section>
+    </div>
     <!-- Our founder section end -->
 
 
     <!-- Contact Section Start -->
-    
-        <div class="container contact-section" id="contact">
-            <div class="row">
-                <!-- Left Side Image -->
-                <div class="col-md-6 mb-4 d-flex align-items-stretch pe-4">
-                    <img src="./image/img3.jpg" alt="Contact Us" class="img-fluid contact-image">
-                </div>
 
-                <!-- Right Side Form -->
-                <div class="col-md-6 d-flex align-items-stretch ps-4">
-                    <div class="w-100">
-                        <p class="btn border-dark rounded-pill bg-white">Contact us</p>
-                        <h2>Contact Us</h2>
-                        <p class="contact-text">Need to discuss something? Feel free to reach out!</p>
+    <div class="container contact-section" id="contact">
+        <div class="row">
+            <!-- Left Side Image -->
+            <div class="col-md-6 mb-4 d-flex align-items-stretch pe-4">
+                <img src="./image/img3.jpg" alt="Contact Us" class="img-fluid contact-image">
+            </div>
 
-                        <!-- Contact Form -->
-                        <form id="contactForm" class="contact-form">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="mobile" placeholder="Mobile" required>
-                            </div>
+            <!-- Right Side Form -->
+            <div class="col-md-6 d-flex align-items-stretch ps-4">
+                <div class="w-100">
+                    <p class="btn border-dark rounded-pill bg-white">Contact us</p>
+                    <h2>Contact Us</h2>
+                    <p class="contact-text">Need to discuss something? Feel free to reach out!</p>
 
-                            <!-- Cards Section Inside Form -->
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <div class="card" onclick="toggleCard(this)">
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <span>Card 1</span>
-                                                <input type="checkbox" class="form-check-input">
-                                            </div>
-                                            <p>Some text related to card 1.</p>
+                    <!-- Contact Form -->
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" required>
+                        </div>
+
+                        <!-- Cards Section Inside Form -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 1</span>
+                                            <input type="checkbox" class="form-check-input">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card" onclick="toggleCard(this)">
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <span>Card 2</span>
-                                                <input type="checkbox" class="form-check-input">
-                                            </div>
-                                            <p>Some text related to card 2.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card" onclick="toggleCard(this)">
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <span>Card 3</span>
-                                                <input type="checkbox" class="form-check-input">
-                                            </div>
-                                            <p>Some text related to card 3.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card" onclick="toggleCard(this)">
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <span>Card 4</span>
-                                                <input type="checkbox" class="form-check-input">
-                                            </div>
-                                            <p>Some text related to card 4.</p>
-                                        </div>
+                                        <p>Some text related to card 1.</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 2</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 3</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card" onclick="toggleCard(this)">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span>Card 4</span>
+                                            <input type="checkbox" class="form-check-input">
+                                        </div>
+                                        <p>Some text related to card 4.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                            <!-- Send Button -->
-                            <button type="button" class="send-button" onclick="submitForm()">Send</button>
-                        </form>
+                        <!-- Send Button -->
+                        <button type="button" class="send-button" onclick="submitForm()">Send</button>
+                    </form>
 
-                        <!-- Message Modal -->
-                        <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="messageModalLabel">Your Message</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <textarea id="messageText" class="form-control" rows="4"
-                                            placeholder="Type your message here..."></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary" onclick="sendMessage()">Send
-                                            Message</button>
-                                    </div>
+                    <!-- Message Modal -->
+                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="messageModalLabel">Your Message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <textarea id="messageText" class="form-control" rows="4"
+                                        placeholder="Type your message here..."></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="sendMessage()">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +639,8 @@
                 </div>
             </div>
         </div>
-    
+    </div>
+
     <!-- Contact Section End -->
 
     <!-- Frequently Asked Questions start -->
@@ -779,7 +812,7 @@
                         <img src="./image/logo.png" alt="footer-logo" width="12%">
                     </div>
                     <h5 class="mb-3 mt-2">Maxwell</h5>
-                    <p>Lorem ipsum dolor sit amet  consectetur <br> adipisicing elit. Distinctio, eveniet necessitatibus! 
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Distinctio, eveniet necessitatibus!
                     </p>
                 </div>
 
