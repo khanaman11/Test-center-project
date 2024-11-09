@@ -97,6 +97,7 @@
   color: #fff;
   position: relative;
   overflow: hidden; /* Prevents overflow from pseudo-element */
+  position: relative;
 }
 
 .banner-section::before,
@@ -120,26 +121,10 @@
   background-color: rgba(59, 146, 226, 0.1); /* Remaining 50% color with lighter opacity */
 }
 
-
-
-/* .banner-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: #fff;
-  background: linear-gradient(
-    135deg,
-    rgba(249, 130, 44, 0.2),
-    rgba(59, 146, 226, 0.2)
-  );
-  position: relative;
-} */
-
 .banner-image {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -215,9 +200,9 @@
 }
 
 .view-intro-btn {
-  top: 321px;
+  top: 377px;
   position: absolute;
-  left: 75px;
+  left: 53px;
   background: white;
   color: black;
   border: none;
