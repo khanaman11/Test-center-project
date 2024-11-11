@@ -35,7 +35,7 @@
 }
 
 .btn-login {
-  color: #f39c12;
+  color: #F9822C;
   background-color: transparent;
   font-weight: bold;
   padding: 10px 20px;
@@ -43,17 +43,17 @@
   transition: background-color 0.5s, color 0.5s;
 }
 
-.btn-login:hover {
+/* .btn-login:hover {
   background-color: #f39c12;
   color: white;
-}
+} */
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 .btn-signin {
-  background-color: #f39c12;
+  background-color: #F9822C;
   color: white;
   font-weight: bold;
   padding: 10px 20px;
@@ -67,11 +67,6 @@
 
 /* Grey background for navbar on small screens */
 @media (max-width: 991px) {
-  .navbar {
-    background-color: #e0e0e0; /* Grey background on small screens */
-  }
-
-  /* Center links on smaller screens */
   .navbar-nav {
     text-align: center;
     width: 100%;
@@ -93,11 +88,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   color: #fff;
   position: relative;
-  overflow: hidden; /* Prevents overflow from pseudo-element */
-  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  /* Allow content to wrap on smaller screens */
 }
 
 .banner-section::before,
@@ -113,56 +108,162 @@
 
 .banner-section::before {
   left: 0;
-  background-color: rgba(249, 130, 44, 0.1); /* First 50% color with lighter opacity */
+  background-color: rgba(249, 130, 44, 0.1);
 }
 
 .banner-section::after {
   right: 0;
-  background-color: rgba(59, 146, 226, 0.1); /* Remaining 50% color with lighter opacity */
+  background-color: rgba(59, 146, 226, 0.1);
 }
 
-.banner-image {
+.topLeftImageCnt {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  top: 10%;
+  left: 0;
+  width: 19%;
+}
+
+.lineBLueImageWrapper {
+  position: absolute;
+  top: 85%;
+  right: 15%;
+  margin-bottom: 0;
+  z-index: -1;
+}
+
+.bottomRightCnt {
+  position: absolute;
+  bottom: 92px;
+  right: 0;
+  width: 19%;
+}
+
+.blueLineImageWrapper {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  margin-bottom: 0;
+  z-index: -1;
+}
+
+.bottomLeftImageCnt {
+  position: absolute;
+  left: 0;
+  width: 19%;
+  bottom: 92px;
+}
+
+.blackLineWrapper {
+  position: absolute;
+  margin-bottom: 0;
+  left: 82%;
+  top: 22%;
+}
+
+.blackLineWrapper::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  border-radius: 100%;
+}
+
+.topLeftimageWrapper {
+  margin: 0;
+  width: 100%;
+}
+
+.bottomRightBtnCnt {
+  position: absolute;
+  right: 100%;
+  width: max-content;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-radius {
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border: 2px solid #fff;
 }
 
-.left-top {
-  top: 10%;
-  left: 5%;
-}
-
-.left-bottom {
-  bottom: 10%;
-  left: 5%;
-}
-
-.right-bottom {
-  bottom: 10%;
-  right: 5%;
+.bannerCnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 767px;
 }
 
 .banner-content {
   text-align: center;
-  max-width: 600px;
+  max-width: 736px;
+  z-index: 1;
+  margin: auto;
+  /* Make sure content stays above images */
 }
 
 .banner-subheading {
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid #222;
   border-radius: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.banner-subheading:hover {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.banner-subheading::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #F9822C;
+  border-radius: 50%;
+  margin-right: 8px;
+
 }
 
 .banner-heading {
-  font-size: 44px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 22px;
   color: #222;
+}
+
+.center-book {
+  color: #F9822C;
+  position: relative;
+}
+
+.banner-heading span::after {
+  content: "\f005";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #F9822C;
+  border-radius: 50%;
+  margin-left: 8px;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
 }
 
 .banner-text {
@@ -170,69 +271,232 @@
   line-height: 1.6;
   margin-bottom: 20px;
   color: #222;
+  max-width: 464px;
+  margin: 0 auto 20px;
 }
+
 
 .banner-buttons .btn {
   margin: 0 10px;
   border-radius: 10px;
   padding: 10px 20px;
   font-weight: bold;
+  width: auto;
+  /* Ensures buttons do not stretch to full width by default */
 }
 
 .btn-partner {
-  background-color: #f39c12;
+  background-color: #F9822C;
+  color: #fff;
+}
+
+.btn-partner:hover {
+  background-color: #F9822C;
   color: #fff;
 }
 
 .btn-demo {
-  /* background-color: #f39c12; */
+  background-color: #fff;
   border: 1px solid #222;
   color: #222;
 }
 
-.text-center-btn {
-  background-color: rgba(249, 130, 44, 1);
+.btn-demo:hover {
+  background-color: #fff;
+  border: 1px solid #222;
+  color: #222;
+}
+
+.btnWrapper {
   position: absolute;
-  top: 20%;
-  left: 16%;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btnWrapperBottom {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+}
+
+.text-center-btn {
+  background-color: #F9822C;
+  position: relative;
+  left: -50%;
   border-radius: 20px;
   border: none;
+  width: max-content;
+}
+
+.text-center-btn:hover {
+  background-color: #F9822C;
 }
 
 .view-intro-btn {
-  top: 57%;
-  position: absolute;
-  left: 7%;
   background: white;
   color: black;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
+  padding: 15px;
+  width: max-content;
+  position: relative;
+  transform: translateY(50%);
 }
 
 .assessment-company-btn {
-  position: absolute;
-  right: 13%;
-  top: 70%;
   border-radius: 20px;
   background: #2980b9;
   border: 0;
+  position: relative;
+  right: -50%;
 }
 
-/* Responsive hero section */
+.assessment-company-btn:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 1200px) {
+
+  /* Adjust banner heading size for medium-large screens */
+  .banner-heading {
+      font-size: 3rem;
+  }
+
+  .banner-text {
+      font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* Stack images vertically and center-align content on tablet screens */
+  .topLeftImageCnt,
+  .bottomLeftImageCnt,
+  .bottomRightCnt {
+      position: static;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .btnWrapper,
+  .btnWrapperBottom,
+  .bottomRightBtnCnt {
+      position: static;
+      transform: none;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+  }
+
+  .banner-content {
+      text-align: center;
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .banner-heading {
+      font-size: 2.5rem;
+  }
+
+  .banner-buttons .btn {
+      margin: 10px 5px;
+  }
+  .blackLineWrapper,.lineBLueImageWrapper,.blueLineImageWrapper{
+      display: none;
+  }
+  .text-center-btn{
+      left: auto;
+  }
+  .view-intro-btn{
+      transform: none;
+  }
+  .bottomRightBtnCnt{
+      width: 100%;
+  }
+  .assessment-company-btn{
+      right: auto;
+  }
+}
+
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
+
+  /* Adjust heading size and center text for smaller screens */
+  .banner-heading {
+      font-size: 2rem;
   }
 
-  .hero-content p {
-    font-size: 1.2rem;
+  .banner-subheading {
+      font-size: 0.9rem;
+      padding: 8px 15px;
   }
 
-  .hero-content .btn-cta {
-    font-size: 1rem;
-    padding: 10px 25px;
+  .banner-text {
+      font-size: 0.9rem;
+  }
+
+  .banner-buttons .btn {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .blackLineWrapper,.lineBLueImageWrapper,.blueLineImageWrapper{
+      display: none;
+  }
+  .text-center-btn{
+      left: auto;
+  }
+  .view-intro-btn{
+      transform: none;
+  }
+  .bottomRightBtnCnt{
+      width: 100%;
+  }
+  .assessment-company-btn{
+      right: auto;
   }
 }
+
+@media (max-width: 576px) {
+
+  /* Stack content vertically for extra-small screens */
+  .banner-section {
+      padding: 20px 0;
+  }
+
+  .banner-heading {
+      font-size: 1.5rem;
+  }
+
+  .banner-text,
+  .banner-subheading {
+      font-size: 0.8rem;
+  }
+
+  .banner-buttons .btn {
+      width: 100%;
+      margin: 5px 0;
+  }
+  .blackLineWrapper,.lineBLueImageWrapper,.blueLineImageWrapper{
+      display: none;
+  }
+  .text-center-btn{
+      left: auto;
+  }
+  .view-intro-btn{
+      transform: none;
+  }
+  .bottomRightBtnCnt{
+      width: 100%;
+  }
+  .assessment-company-btn{
+      right: auto;
+  }
+
+}
+
+
 /* //////////////////////////////////////// Hero section styling End ///////////////////////////// */
 
 
@@ -351,7 +615,7 @@
 
 .who-we-are-header .btn {
   font-size: 16px;
-  background-color: #f39c12;
+  background-color: #F9822C;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -456,7 +720,6 @@
   /* background-color: #f4f4f4; */
 }
 
-
 .services-content h2 {
   font-size: 38px;
   color: #2a5298;
@@ -479,6 +742,19 @@
   background-color: #f39c12;
   color: white;
   font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  color:#2a5298 !important;
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.accordion .accordion-item{
+  border: 1px solid #ddd !important;
+  
 }
 .accordion .accordion-item,
 .accordion .accordion-header,
@@ -549,6 +825,7 @@
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 40px;
+  padding: 0px 20% ;
 }
 
 
@@ -608,12 +885,13 @@
   margin: 0 0 10px;
   font-size: 1rem;
   color: #fff;
+  padding: 0;
 }
 
 .card-btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #f39c12;
+  background: #F9822C;
   border: none;
   border-radius: 20px;
   color: #fff;
@@ -695,7 +973,7 @@
 .founder-name {
   font-size: 1.75rem;
   font-weight: bold;
-  color: rgba(249, 130, 44, 1);
+  color: #F9822C;
   margin-bottom: 24px;
   margin-top: 50px;
 }
@@ -725,7 +1003,7 @@
 }
 
 .awards-link a {
-  color: #f39c12;
+  color: #F9822C;
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
@@ -791,7 +1069,7 @@
 .send-button {
   width: 100%;
   margin-top: 20px;
-  background-color: #f39c12;
+  background-color: #F9822C;
   color: white;
   border: none;
   border-radius: 5px;
@@ -828,8 +1106,8 @@
 }
 
 .stat-number {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 800;
   color: #2a5298;
 }
 
@@ -1039,7 +1317,7 @@
 
 .subscribe-btn {
   padding: 12px 25px;
-  background: #ff7f50;
+  background: #F9822C;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -1119,11 +1397,11 @@
 .footer-subscribe input {
   border-radius: 0;
   border: none;
-  border: 1px solid #f39c12;
+  border: 1px solid #F9822C;
 }
 
 .footer-subscribe .btn-subscribe {
-  background-color: #f39c12;
+  background-color: #F9822C;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -1148,7 +1426,7 @@
 .footer-columns h5 {
   font-weight: bold;
   margin-bottom: 10px;
-  color: #f39c12;
+  color: #F9822C;
 }
 
 .footer-columns a {
