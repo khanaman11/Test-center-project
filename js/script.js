@@ -100,21 +100,19 @@ document.querySelectorAll('.new-faq-accordion').forEach(accordionContainer => {
     });
   });
   // FAQ section script - end
-  
-// why us section style.
-//  const counters = document.querySelectorAll('.stat-number');
-//  counters.forEach(counter => {
-//    counter.innerText = '0 +';
-//    const updateCounter = () => {
-//      const target = +counter.getAttribute('data-target');
-//      const current = +counter.innerText.split(' ')[0];
-//      const increment = target / 100; // adjust speed
-//      if (current < target) {
-//        counter.innerText = `${Math.ceil(current + increment)} +`;
-//        setTimeout(updateCounter, 10); // adjust delay
-//      } else {
-//        counter.innerText = `${target} +`;
-//      }
-//    };
-//    updateCounter();
-//  });
+  // Select all tab buttons and content divs
+const tabButtons = document.querySelectorAll(".tabButton");
+const tabContents = document.querySelectorAll(".tabContent");
+
+// Add click event listener to each button
+tabButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        // Remove 'show' class from all content divs to hide them
+        tabContents.forEach(content => content.classList.remove("show"));
+        tabButtons.forEach(content => content.classList.remove("active"));
+
+        // Add 'show' class to the clicked tab's corresponding content
+        tabContents[index].classList.add("show");
+        tabButtons[index].classList.add("active");
+    });
+});
