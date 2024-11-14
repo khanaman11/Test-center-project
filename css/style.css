@@ -230,7 +230,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px; /* Space between the circle and text */
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* Gradient border effect */
@@ -310,8 +310,9 @@
 }
 
 .btn-partner:hover {
-  background-color: #f9822c;
-  color: #fff;
+  background-color: #fff;
+  color: #f9822c;
+  border: 1px solid #f9822c;
 }
 
 .btn-demo {
@@ -690,6 +691,15 @@
   /* background-color: #f8f9fa; */
   color: #454545;
 }
+.about-us-tab {
+  border: 1px solid #454545;
+  color: #454545;
+  border-radius: 20px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+}
 
 .about {
   font-size: 38px;
@@ -734,7 +744,7 @@
   padding: 40px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   text-align: center;
   transition: transform 0.3s;
   border: none;
@@ -753,6 +763,10 @@
 
 .card-custom:hover .card-border-top {
   background-color: rgba(249, 130, 44, 1);
+}
+.card-custom:hover{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 .card-subheading {
@@ -804,6 +818,7 @@
   margin: 24px 0px;
   color: #000000;
   text-align: left;
+  line-height: 1.5;
 }
 .card-custom h4 span {
   color: rgba(249, 130, 44, 1);
@@ -836,6 +851,8 @@
     width: 100px;
     margin: auto;
     margin-bottom: 10px;
+    color: #454545;
+   
   }
   .about {
     text-align: center;
@@ -864,7 +881,7 @@
 }
 
 .services-content p {
-  font-size: 1rem;
+  font-size: 12px;
   color: #454545;
   margin-bottom: 16px;
   background-color: #f6f6f6 !important;
@@ -1064,6 +1081,7 @@
   color: #454545 !important;
   margin-bottom: 20px !important;
   background-color: #fff;
+  font-size: 12px !important;
 }
 .card-heading {
   position: absolute;
@@ -1272,7 +1290,7 @@
   border-radius: 10px;
 }
 .founder-subheading {
-  font-size: 1rem;
+  font-size: 12px;
   color: #454545;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -1368,6 +1386,7 @@
 .contact-sub-heading {
   color: #454545;
   background-color: #f6f6f6 !important;
+  font-size: 12px;
 }
 
 .contact-section h2 {
@@ -1479,6 +1498,7 @@
 }
 .why-us-sub-tag {
   background-color: #f6f6f6;
+  font-size: 12px;
 }
 .stat-item {
   text-align: center;
@@ -1702,7 +1722,7 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
 .overlay {
@@ -1842,9 +1862,10 @@
   border-radius: 20px;
   background-color: #fff;
   color: #454545;
-  width: 150px;
+  width: 100px;
   margin: auto;
   margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .footer-subscribe {
