@@ -695,7 +695,7 @@
   border: 1px solid #454545;
   color: #454545;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 14px;
   width: 100px;
   padding: 5px;
   text-align: center;
@@ -881,7 +881,7 @@
 }
 
 .services-content p {
-  font-size: 12px;
+  font-size: 14px;
   color: #454545;
   margin-bottom: 16px;
   background-color: #f6f6f6 !important;
@@ -1081,7 +1081,7 @@
   color: #454545 !important;
   margin-bottom: 20px !important;
   background-color: #fff;
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 .card-heading {
   position: absolute;
@@ -1290,7 +1290,7 @@
   border-radius: 10px;
 }
 .founder-subheading {
-  font-size: 12px;
+  font-size: 14px;
   color: #454545;
   text-transform: capitalize;
   margin-bottom: 10px;
@@ -1386,7 +1386,7 @@
 .contact-sub-heading {
   color: #454545;
   background-color: #f6f6f6 !important;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .contact-section h2 {
@@ -1498,7 +1498,7 @@
 }
 .why-us-sub-tag {
   background-color: #f6f6f6;
-  font-size: 12px;
+  font-size: 14px;
 }
 .stat-item {
   text-align: center;
@@ -1857,7 +1857,7 @@
 }
 .Faq-tag {
   text-align: center;
-  padding: 7px;
+  padding: 7px 10px;
   border: 1px solid #454545;
   border-radius: 20px;
   background-color: #fff;
@@ -1865,7 +1865,9 @@
   width: 100px;
   margin: auto;
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 14px;
+  width: max-content;
+
 }
 
 .footer-subscribe {
