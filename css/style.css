@@ -881,13 +881,16 @@
   .about-us-text {
     width: 100% !important;
   }
+  .who-we-are {
+    padding: 80x 12px;
+  }
 }
 
 /* /////////////////////////////////////////// About us Section styling End ///////////////////////////  */
 
 /*//////////////////////////////////////////// Services Section Styling  start //////////////////////////*/
 .services-section {
-  padding: 80px 0;
+  padding: 80px 16px;
   /* background-color: #f4f4f4; */
 }
 
@@ -1022,9 +1025,6 @@
   }
   .according-padd{
     padding: 0px 20px;
-  }
-  .according-img{
-    padding: 0px 40px;
   }
 }
 /* ///////////////////////////////  Services Section Styling End ///////////////////////////////// */
@@ -1328,13 +1328,15 @@
 
   .help-card {
     width: 100%;
-    height: 300px;
-    max-width: 350px;
+    max-width: 100%;
     margin: auto;
   }
 
   .card-heading {
     font-size: 1.3rem;
+  }
+  .who-we-help{
+    padding: 80px 12px;
   }
   .who-we-help p{
     padding: 0 50px;
@@ -1589,7 +1591,7 @@
 
   }
   .img-contact-cnt{
-    max-width: 500px;
+    max-width: 100%;
   }
   .contact-form{
     padding: 0px 20px;
@@ -1663,7 +1665,7 @@
     padding: 0px 20px;
   }
   .img-fluid{
-   max-width:500px;
+   max-width:100%;
   }
 }
 /*//////////////////////////////////////// why us section style end  //////////////////////////////////*/
