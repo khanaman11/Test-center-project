@@ -61,6 +61,7 @@
   padding: 10px 20px;
   border: none;
   transition: background-color 0.5s;
+  border-radius: 10px;
 }
 
 .btn-signin:hover {
@@ -496,7 +497,8 @@
 @media (max-width: 768px) {
   /* Adjust heading size and center text for smaller screens */
   .banner-heading {
-    font-size: 2rem;
+    font-size: 48px;
+    font-weight: 600;
   }
 
   .banner-subheading {
@@ -550,7 +552,14 @@
   .bottomLeftImageCntDesktop {
     display: none;
   }
+  .gradient-border-button{
+    width: max-content;
+  }
+  .center-book img{
+    display: none;
+  }
 }
+
 
 @media (max-width: 576px) {
   /* Stack content vertically for extra-small screens */
@@ -597,6 +606,13 @@
   .bottomLeftImageCntDesktop {
     display: none;
   }
+  .gradient-border-button{
+    width: max-content;
+  }
+  .banner-heading {
+    font-size: 48px;
+    font-weight: 600;
+  }
 }
 
 /* //////////////////////////////////////// Hero section styling End ///////////////////////////// */
@@ -615,7 +631,6 @@
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
-  text-transform: capitalize;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 0px;
@@ -697,8 +712,9 @@
   border-radius: 20px;
   font-size: 14px;
   width: 100px;
-  padding: 5px;
+  padding: 5px 10px;
   text-align: center;
+  width: max-content;
 }
 
 .about {
@@ -706,6 +722,9 @@
   color: #000000;
   font-weight: 700;
   margin-bottom: 24px;
+}
+.about span{
+  color: #f9822c;
 }
 
 .who-we-are-header {
@@ -727,7 +746,7 @@
   background-color: #f9822c;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: background-color 0.3s;
   font-weight: bold;
   padding: 10px 20px;
@@ -836,6 +855,7 @@
     /* align-items: flex-start; */
     gap: 15px;
     text-align: center;
+    padding: 0px 20px;
   }
 
   .who-we-are-header h2 {
@@ -852,6 +872,7 @@
     margin: auto;
     margin-bottom: 10px;
     color: #454545;
+    width: max-content;
    
   }
   .about {
@@ -876,6 +897,9 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
+.services-content h2 span{
+  color: #f9822c;
+}
 #services-text {
   color: #454545;
 }
@@ -885,6 +909,8 @@
   color: #454545;
   margin-bottom: 16px;
   background-color: #f6f6f6 !important;
+  border: 1px solid #454545;
+  border-radius: 20px;
 }
 .services-btn {
   display: flex;
@@ -901,7 +927,7 @@
   background-color: #f9822c;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: background-color 0.3s;
   font-weight: bold;
   padding: 10px 20px;
@@ -991,6 +1017,15 @@
   .services-text-cnt{
     text-align: center;
   }
+  .services-btn{
+    padding: 0px 40px;
+  }
+  .according-padd{
+    padding: 0px 20px;
+  }
+  .according-img{
+    padding: 0px 40px;
+  }
 }
 /* ///////////////////////////////  Services Section Styling End ///////////////////////////////// */
 
@@ -1009,6 +1044,9 @@
   color: #000000;
   font-weight: 700;
   text-transform: capitalize;
+}
+.who-we-help h2 span{
+  color:#f9822c ;
 }
 
 .who-we-help p {
@@ -1046,35 +1084,56 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .help-card:hover {
   transform: translateY(-10px);
 }
-
+.overlay-text{
+  padding:0px 45px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: 700;
+  top: 60px;
+  position: absolute;
+  
+}
+.overlay-text li{
+  margin: 10px 0px;
+}
+.overlay-text li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
 /* New overlay slide effect */
-.overlay-slide {
+
+/* .overlay-slide {
   position: absolute;
   top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ddd; /* Adjust opacity as needed */
+  background: #ddd; 
   transition: top 0.5s ease;
   z-index: 2;
-}
+} */
 
-.help-card:hover .overlay-slide {
+/* .help-card:hover .overlay-slide {
   top: 0;
-}
-.overlay-slide {
+} */
+/* .overlay-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.overlay-slide ul li {
+} */
+/* .overlay-slide ul li {
   padding: 10px;
   color: #555;
-}
+} */
 .help-tag {
   width: max-content;
   padding: 5px 16px !important;
@@ -1093,6 +1152,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   z-index: 1;
+  font-weight: 700;
 }
 
 .card-content {
@@ -1127,7 +1187,9 @@
 }
 
 .card-btn:hover {
-  background: #ff4b2b;
+  background: #fff;
+  border: 1px solid #f9822c;
+  color: #f9822c;
 }
 .leftSolutionCnt{
   background-color: #F6F6F6;
@@ -1216,6 +1278,7 @@
 .tabContent-img-cnt {
   width: 180px;
   height: 142px;
+  flex-shrink: 0;
 }
 .tabContent-img-cnt img {
   width: 100%;
@@ -1266,7 +1329,7 @@
   .help-card {
     width: 100%;
     height: 300px;
-    max-width: 540px;
+    max-width: 500px;
     margin: auto;
   }
 
@@ -1305,6 +1368,9 @@
   margin-bottom: 40px;
   text-align: center;
 }
+.founder-heading span{
+  color:#f9822c ;
+}
 
 .founder-image-wrapper {
   /* height: 100%; */
@@ -1331,7 +1397,7 @@
 .founder-name {
   font-size: 38px;
   font-weight: 700;
-  color: #000000;
+  color: #f9822c;
   margin-bottom: 24px;
   margin-top: 50px;
 }
@@ -1361,7 +1427,7 @@
 }
 
 .awards-link a {
-  color: #000000;
+  color: #f9822c;
   font-weight: 700;
   text-decoration: none;
   font-size: 1rem;
@@ -1372,6 +1438,35 @@
 .awards-link a:hover {
   text-decoration: underline;
 }
+
+/* resonsive style */
+@media (max-width: 768px){
+  .founder-image{
+    max-width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+  }
+  .founder-name{
+    text-align: center;
+  }
+  .year-founder{
+    display: grid !important;
+    text-align: center;
+  }
+  .founder-text{
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .founder-exprience{
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .awards-link{
+    text-align: center;
+  }
+}
+  
+
 /* ///////////////////////////////////////// Our founder section style end /////////////////////////////*/
 
 /*///////////////////////////////////////// contact section style start ////////////////////////////////*/
@@ -1394,6 +1489,9 @@
   font-weight: 700;
   margin-bottom: 24px;
   color: #000000;
+}
+.contact-section h2 span{
+  color:#f9822c ;
 }
 
 .contact-text {
@@ -1420,6 +1518,7 @@
 }
 .selected-card {
   border: 1px solid #2a5298;
+  background-color: #f9822c;
 }
 
 .card-title {
@@ -1489,6 +1588,12 @@
     margin-bottom: 10px;
 
   }
+  .img-contact-cnt{
+    max-width: 500px;
+  }
+  .contact-form{
+    padding: 0px 20px;
+  }
 }
 /*////////////////////////////////////////// contact section style end ////////////////////////////////*/
 
@@ -1513,12 +1618,12 @@
 .stat-number {
   font-size: 40px;
   font-weight: 700;
-  color: #000000;
+  color: #f9822c;
 }
 
 .stat-label {
   font-size: 14px;
-  color: #454545;
+  color: #f9822c;
 }
 
 .why-us-heading {
@@ -1526,6 +1631,9 @@
   color: #000000;
   font-weight: 700;
   margin-bottom: 24px;
+}
+.why-us-heading span{
+  color:#f9822c ;
 }
 .why-us-text {
   color: #454545 !important;
@@ -1548,9 +1656,14 @@
   }
   .why-us-heading{
     text-align: center;
+    padding: 0px 20px;
   }
   .why-us-text{
     text-align: center;
+    padding: 0px 20px;
+  }
+  .img-fluid{
+   max-width:500px;
   }
 }
 /*//////////////////////////////////////// why us section style end  //////////////////////////////////*/
@@ -1567,6 +1680,9 @@
   font-size: 38px;
   color: #000000;
   font-weight: 700;
+}
+.faq-heading span{
+  color:#f9822c ;
 }
 
 .faq-subtext {
@@ -1671,6 +1787,9 @@
 .accordion-item:last-child .accordion-header {
   border-bottom: none; /* Remove bottom border for last item */
 }
+.fa-solid{
+  color: #f9822c;
+}
 
 
 /* FAQ section responsive start */
@@ -1692,22 +1811,7 @@
   }
 }
 
-@media (max-width: 480px) {
-  .accordion-header {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: flex-start;
-    gap: 5px; /* Reduce gap for smaller devices */
-  }
 
-  .accordion-icon-right {
-    align-self: flex-end; /* Aligns the right icon to the end */
-    margin-left: 0; /* Remove auto margin */
-  }
-
-  .accordion-content {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
-  }
-}
 /* FAQ section responsive end */
 
 /* ////////////////////////////////////////// FAQ section style end ///////////////////////////////////*/
@@ -1946,6 +2050,13 @@
 
 .footer-bottom a:hover {
   color: #f39c12;
+}
+.footer-solial-icon i{
+  margin-right: 10px;
+}
+.footer-solial-icon i:hover{
+  color: #f9822c;
+  cursor: pointer;
 }
 /*//////////////////////////////////////////// footer styling end /////////////////////////////////////*/
 
