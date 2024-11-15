@@ -698,6 +698,19 @@
   }
 }
 
+/* Responsive adjustments  scroll section*/
+@media (max-width: 768px) {
+  .scroll-item {
+    width: 200px;
+    margin: 0 10px;
+  }
+
+  .scroll-item img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 /*/////////////////////////////////////////////// scrolling section styling End ///////////////////  */
 
 /*//////////////////////////////////////////// About us Section styling start ///////////////////////*/
@@ -1822,13 +1835,14 @@
 .pre-footer-section {
   position: relative;
   padding: 60px 0px;
-  background: linear-gradient(135deg, #007bff, #00d4ff);
+  /* background: linear-gradient(135deg, #007bff, #00d4ff); */
   color: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   max-width: 1200px;
   margin: 80px auto;
+  background-color: #000000;
 }
 
 .overlay {
@@ -2060,22 +2074,48 @@
   color: #f9822c;
   cursor: pointer;
 }
+.footer-btn-input{
+  display: flex;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+/* footer responsive style */
+@media (max-width:769px) {
+  .footer-heading{
+    text-align: center;
+  }
+  .footer-btn-input{
+    display: block;
+    text-align: center;
+    
+  }
+  .footer-subscribe input{
+    margin: 20px 0px;
+  }
+  .footer-logo{
+    text-align: center;
+  }
+  .footer-header{
+    text-align: center;
+  }
+  .footer-title{
+    text-align: center;
+  }
+  .footer-columns{
+    text-align: center;
+  }
+  .footer-bottom{
+    display: block;
+    text-align: center;
+  }
+}
 /*//////////////////////////////////////////// footer styling end /////////////////////////////////////*/
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Responsive adjustments  scroll section*/
-@media (max-width: 768px) {
-  .scroll-item {
-    width: 200px;
-    margin: 0 10px;
-  }
 
-  .scroll-item img {
-    width: 60px;
-    height: 60px;
-  }
-}
 
 
 
