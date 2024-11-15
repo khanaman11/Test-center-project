@@ -1329,8 +1329,11 @@
   .help-card {
     width: 100%;
     height: 300px;
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
+  }
+  .help-card img{
+    max-width: 400px;
   }
 
   .card-heading {
