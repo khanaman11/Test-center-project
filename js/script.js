@@ -57,6 +57,20 @@ function sendMessage() {
     document.getElementById('messageText').value = '';
 }
 
+// ////////////////// navbar script ///////////////
+const navLinks = document.querySelectorAll('.nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        // Add click event listener to each nav link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Collapse the navbar
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
+
 
 
 
