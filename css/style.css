@@ -2108,7 +2108,13 @@
   .footer-subscribe input{
     margin: 20px 0px;
   }
- 
+  .footer-bottom{
+    display: block;
+    text-align: center;
+  }
+  .footer-solial-icon{
+    margin-bottom: 10px;
+  }
   
 }
 /*//////////////////////////////////////////// footer styling end /////////////////////////////////////*/
