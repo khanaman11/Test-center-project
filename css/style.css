@@ -78,6 +78,7 @@
   /* Center the collapsed navbar content */
   .navbar-collapse {
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .navbar-collapse .navbar-nav {
@@ -87,6 +88,7 @@
   /* Ensure toggle button stays on the right */
   .navbar-toggler {
     margin-left: auto;
+    margin-top: 5px;
   }
 }
 
@@ -402,7 +404,7 @@
   }
 
   .banner-text {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
   .bottomLeftImageOther {
     display: block;
@@ -502,12 +504,12 @@
   }
 
   .banner-subheading {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 8px 15px;
   }
 
   .banner-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .banner-buttons .btn {
@@ -554,6 +556,7 @@
   }
   .gradient-border-button{
     width: max-content;
+    font-size: 12px;
   }
   .center-book img{
     display: none;
@@ -573,7 +576,7 @@
 
   .banner-text,
   .banner-subheading {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .banner-buttons .btn {
@@ -706,8 +709,8 @@
   }
 
   .scroll-item img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -886,6 +889,7 @@
     margin-bottom: 10px;
     color: #454545;
     width: max-content;
+    background-color: #fff;
    
   }
   .about {
@@ -1354,6 +1358,9 @@
   .who-we-help p{
     padding: 0 50px;
   }
+  .solutionDropdownCnt{
+    display: none;
+  }
 }
 
 /* ///////////////////////////////////// who do we help section styling end //////////////////////////// */
@@ -1479,6 +1486,10 @@
   .awards-link{
     text-align: center;
   }
+  .founding-year{
+    margin-left: 0px !important;
+  }
+  
 }
   
 
@@ -1609,6 +1620,9 @@
   .contact-form{
     padding: 0px 20px;
   }
+  .contact-image{
+    display: none;
+  }
 }
 /*////////////////////////////////////////// contact section style end ////////////////////////////////*/
 
@@ -1623,6 +1637,10 @@
 .stat-item {
   text-align: center;
 }
+.stat-item:hover{
+  color: #f9822c;
+  cursor: pointer;
+}
 
 .stats-box {
   border: 1px solid #ddd;
@@ -1633,12 +1651,11 @@
 .stat-number {
   font-size: 40px;
   font-weight: 700;
-  color: #f9822c;
+  
 }
 
 .stat-label {
   font-size: 14px;
-  color: #f9822c;
 }
 
 .why-us-heading {
@@ -2083,33 +2100,16 @@
 }
 /* footer responsive style */
 @media (max-width:769px) {
-  .footer-heading{
-    text-align: center;
-  }
+  
   .footer-btn-input{
     display: block;
-    text-align: center;
     
   }
   .footer-subscribe input{
     margin: 20px 0px;
   }
-  .footer-logo{
-    text-align: center;
-  }
-  .footer-header{
-    text-align: center;
-  }
-  .footer-title{
-    text-align: center;
-  }
-  .footer-columns{
-    text-align: center;
-  }
-  .footer-bottom{
-    display: block;
-    text-align: center;
-  }
+ 
+  
 }
 /*//////////////////////////////////////////// footer styling end /////////////////////////////////////*/
 
