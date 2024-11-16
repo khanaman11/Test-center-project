@@ -708,10 +708,10 @@
     margin: 0 10px;
   }
 
-  .scroll-item img {
+  /* .scroll-item img {
     width: 90px;
     height: 90px;
-  }
+  } */
 }
 
 /*/////////////////////////////////////////////// scrolling section styling End ///////////////////  */
@@ -1041,7 +1041,7 @@
     padding: 0px 40px;
   }
   .according-padd{
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
   }
 }
 /* ///////////////////////////////  Services Section Styling End ///////////////////////////////// */
