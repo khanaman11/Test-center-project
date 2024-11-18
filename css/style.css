@@ -89,11 +89,11 @@
     outline: none;
   }
   .navbar-brand img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .navbar-toggler-icon {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -1947,7 +1947,7 @@
   background: #f9822c;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
