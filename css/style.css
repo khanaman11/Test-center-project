@@ -1239,8 +1239,11 @@
   transform: translateX(-50%);
   margin: auto;
   display: flex;
-  padding: 20px;
   border-radius: 10px;
+  box-shadow: 4px 4px 40px 0px #0000000F;
+  -webkit-box-shadow: 4px 4px 40px 0px #0000000F;
+  -moz-box-shadow: 4px 4px 40px 0px #0000000F;
+  -o-box-shadow: 4px 4px 40px 0px #0000000F;
 }
 .nav-item-solution:hover .solutionDropdownCnt {
   opacity: 1;
@@ -1259,7 +1262,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   border-radius: 10px;
   padding: 16px;
   margin: 0 10px 10px 0;
@@ -1268,14 +1270,18 @@
 .tab-icon {
   width: 50px;
   height: 50px;
-  background-color: #ddd;
+  background-color: #FFF;
   border-radius: 30px;
   flex-shrink: 0;
   margin-right: 20px;
+  border: 1px solid #E2E2E2;
 }
 .activeIcon {
   display: none;
   margin-right: 20px;
+}
+.tabButton.active{
+  background-color: #FFF;
 }
 .tabButton.active .activeIcon {
   display: block;
@@ -1375,7 +1381,7 @@
 }
 .founder-bg {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
 }
 .founder-subheading {
   font-size: 14px;
@@ -1402,6 +1408,7 @@
   display: flex;
   align-items: stretch;
   padding: 16px 16px 0px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .founder-image {
@@ -1545,7 +1552,7 @@
 }
 .selected-card {
   border: 1px solid #2a5298;
-  background-color: #f9822c;
+  background-color: #fef2e9;
 }
 
 .card-title {
