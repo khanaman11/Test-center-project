@@ -135,46 +135,46 @@ tabButtons.forEach((button, index) => {
 
 
 ////////////////////////////// cookies script start here ///////////////////////////////////
-function checkCookie() {
-  let userCookie = getCookie("cookieAccepted");
-  if (userCookie != "") {
-      // Cookie is already set, don't show the popup
-      document.getElementById("cookie-popup").style.display = "none";
-  } else {
-      // Cookie is not set, show the popup
-      document.getElementById("cookie-popup").style.display = "block";
-  }
-}
+// function checkCookie() {
+//   let userCookie = getCookie("cookieAccepted");
+//   if (userCookie != "") {
+//       // Cookie is already set, don't show the popup
+//       document.getElementById("cookie-popup").style.display = "none";
+//   } else {
+//       // Cookie is not set, show the popup
+//       document.getElementById("cookie-popup").style.display = "block";
+//   }
+// }
 
-// Function to accept cookies and set the cookie
-function acceptCookies() {
-  setCookie("cookieAccepted", "true", 365); // Cookie will last for 365 days
-  document.getElementById("cookie-popup").style.display = "none"; // Hide the popup
-}
+// // Function to accept cookies and set the cookie
+// function acceptCookies() {
+//   setCookie("cookieAccepted", "true", 365); // Cookie will last for 365 days
+//   document.getElementById("cookie-popup").style.display = "none"; // Hide the popup
+// }
 
-// Function to set cookies
-function setCookie(cname, cvalue, exdays) {
-  let d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// // Function to set cookies
+// function setCookie(cname, cvalue, exdays) {
+//   let d = new Date();
+//   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//   let expires = "expires=" + d.toUTCString();
+//   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
 
 // Function to get cookie value
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-      }
-  }
-  return "";
+// function getCookie(cname) {
+//   let name = cname + "=";
+//   let decodedCookie = decodeURIComponent(document.cookie);
+//   let ca = decodedCookie.split(';');
+//   for(let i = 0; i < ca.length; i++) {
+//       let c = ca[i];
+//       while (c.charAt(0) == ' ') {
+//           c = c.substring(1);
+//       }
+//       if (c.indexOf(name) == 0) {
+//           return c.substring(name.length, c.length);
+//       }
+//   }
+//   return "";
 }
 
 // Run the checkCookie function on page load
