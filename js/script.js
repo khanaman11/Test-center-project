@@ -20,56 +20,56 @@ function toggleCard(card) {
 }
 
 function submitForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const mobile = document.getElementById('mobile').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const mobile = document.getElementById('mobile').value;
 
-    // Check if any checkbox is selected
-    const isCardSelected = Array.from(document.querySelectorAll('.contact-form input[type="checkbox"]')).some(checkbox => checkbox.checked);
+  // Check if any checkbox is selected
+  const isCardSelected = Array.from(document.querySelectorAll('.contact-form input[type="checkbox"]')).some(checkbox => checkbox.checked);
 
-    if (!name || !email || !mobile) {
-        alert('Please fill in all fields.');
-        return;
-    }
+  if (!name || !email || !mobile) {
+    alert('Please fill in all fields.');
+    return;
+  }
 
-    if (!isCardSelected) {
-        alert('Please select at least one card.');
-        return;
-    }
+  if (!isCardSelected) {
+    alert('Please select at least one card.');
+    return;
+  }
 
-    alert('Form submitted successfully!');
-    document.getElementById('contactForm').reset();
+  alert('Form submitted successfully!');
+  document.getElementById('contactForm').reset();
 }
 
 function sendMessage() {
-    const message = document.getElementById('messageText').value;
+  const message = document.getElementById('messageText').value;
 
-    if (!message) {
-        alert('Please type a message before sending.');
-        return;
-    }
+  if (!message) {
+    alert('Please type a message before sending.');
+    return;
+  }
 
-    alert('Message sent successfully!');
-    const messageModal = bootstrap.Modal.getInstance(document.getElementById('messageModal'));
-    if (messageModal) {
-        messageModal.hide();
-    }
-    document.getElementById('messageText').value = '';
+  alert('Message sent successfully!');
+  const messageModal = bootstrap.Modal.getInstance(document.getElementById('messageModal'));
+  if (messageModal) {
+    messageModal.hide();
+  }
+  document.getElementById('messageText').value = '';
 }
 
 // ////////////////// navbar script ///////////////
 const navLinks = document.querySelectorAll('.nav-link');
-        const navbarCollapse = document.querySelector('.navbar-collapse');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 
-        // Add click event listener to each nav link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                // Collapse the navbar
-                if (navbarCollapse.classList.contains('show')) {
-                    new bootstrap.Collapse(navbarCollapse).hide();
-                }
-            });
-        });
+// Add click event listener to each nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Collapse the navbar
+    if (navbarCollapse.classList.contains('show')) {
+      new bootstrap.Collapse(navbarCollapse).hide();
+    }
+  });
+});
 
 
 
@@ -77,107 +77,103 @@ const navLinks = document.querySelectorAll('.nav-link');
 // JavaScript code for accordian display image .
 
 function showImage(imageIndex) {
-    const images = document.querySelectorAll('.image-display img');
-    images.forEach((img, index) => {
-        img.classList.remove('active');
-        if (index === imageIndex - 1) {
-            img.classList.add('active');
-        }
-    });
+  const images = document.querySelectorAll('.image-display img');
+  images.forEach((img, index) => {
+    img.classList.remove('active');
+    if (index === imageIndex - 1) {
+      img.classList.add('active');
+    }
+  });
 };
 
 
-// //////////////////////////FAQ section script - start /////////////////////////////
+// /////////////////////////// FAQ section script - start /////////////////////////////
 
 document.querySelectorAll('.new-faq-accordion').forEach(accordionContainer => {
-    const headers = accordionContainer.querySelectorAll('.accordion-header');
-  
-    headers.forEach(button => {
-      button.addEventListener('click', () => {
-        // Close other accordion contents within the same container
-        headers.forEach(header => {
-          if (header !== button) {
-            header.classList.remove('active');
-            header.nextElementSibling.style.display = 'none';
-          }
-        });
-  
-        // Toggle the clicked accordion content
-        const content = button.nextElementSibling;
-        if (button.classList.contains('active')) {
-          button.classList.remove('active');
-          content.style.display = 'none';
-        } else {
-          button.classList.add('active');
-          content.style.display = 'block';
+  const headers = accordionContainer.querySelectorAll('.accordion-header');
+
+  headers.forEach(button => {
+    button.addEventListener('click', () => {
+      // Close other accordion contents within the same container
+      headers.forEach(header => {
+        if (header !== button) {
+          header.classList.remove('active');
+          header.nextElementSibling.style.display = 'none';
         }
       });
+
+      // Toggle the clicked accordion content
+      const content = button.nextElementSibling;
+      if (button.classList.contains('active')) {
+        button.classList.remove('active');
+        content.style.display = 'none';
+      } else {
+        button.classList.add('active');
+        content.style.display = 'block';
+      }
     });
   });
+});
 
-  //////////////// FAQ section script - end ////////////////////////////////////////
-  // Select all tab buttons and content divs
+//////////////// FAQ section script - end ////////////////////////////////////////
+// Select all tab buttons and content divs
 const tabButtons = document.querySelectorAll(".tabButton");
 const tabContents = document.querySelectorAll(".tabContent");
 
 // Add click event listener to each button
 tabButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        // Remove 'show' class from all content divs to hide them
-        tabContents.forEach(content => content.classList.remove("show"));
-        tabButtons.forEach(content => content.classList.remove("active"));
+  button.addEventListener("click", () => {
+    // Remove 'show' class from all content divs to hide them
+    tabContents.forEach(content => content.classList.remove("show"));
+    tabButtons.forEach(content => content.classList.remove("active"));
 
-        // Add 'show' class to the clicked tab's corresponding content
-        tabContents[index].classList.add("show");
-        tabButtons[index].classList.add("active");
-    });
+    // Add 'show' class to the clicked tab's corresponding content
+    tabContents[index].classList.add("show");
+    tabButtons[index].classList.add("active");
+  });
 });
 
 
 ////////////////////////////// cookies script start here ///////////////////////////////////
-// function checkCookie() {
-//   let userCookie = getCookie("cookieAccepted");
-//   if (userCookie != "") {
-//       // Cookie is already set, don't show the popup
-//       document.getElementById("cookie-popup").style.display = "none";
-//   } else {
-//       // Cookie is not set, show the popup
-//       document.getElementById("cookie-popup").style.display = "block";
-//   }
-// }
-
-// // Function to accept cookies and set the cookie
-// function acceptCookies() {
-//   setCookie("cookieAccepted", "true", 365); // Cookie will last for 365 days
-//   document.getElementById("cookie-popup").style.display = "none"; // Hide the popup
-// }
-
-// // Function to set cookies
-// function setCookie(cname, cvalue, exdays) {
-//   let d = new Date();
-//   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//   let expires = "expires=" + d.toUTCString();
-//   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-// }
-
-// Function to get cookie value
-// function getCookie(cname) {
-//   let name = cname + "=";
-//   let decodedCookie = decodeURIComponent(document.cookie);
-//   let ca = decodedCookie.split(';');
-//   for(let i = 0; i < ca.length; i++) {
-//       let c = ca[i];
-//       while (c.charAt(0) == ' ') {
-//           c = c.substring(1);
-//       }
-//       if (c.indexOf(name) == 0) {
-//           return c.substring(name.length, c.length);
-//       }
-//   }
-//   return "";
+function checkCookie() {
+  let userCookie = getCookie("cookieAccepted");
+  if (userCookie != "") {
+    document.getElementById("cookie-popup").style.display = "none";
+  } else {
+    document.getElementById("cookie-popup").style.display = "block";
+  }
 }
 
-// Run the checkCookie function on page load
+
+function acceptCookies() {
+  setCookie("cookieAccepted", "true", 365); 
+  document.getElementById("cookie-popup").style.display = "none"; 
+}
+
+
+function setCookie(cname, cvalue, exdays) {
+  let d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 window.onload = checkCookie;
 
 ////////////////////////////// cookies script end here ///////////////////////////////////
