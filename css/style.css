@@ -2398,6 +2398,7 @@
   width: 90%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.3s ease;
+  height: 50%;
 }
 
 .popup h2 {
