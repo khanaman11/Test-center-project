@@ -1076,9 +1076,9 @@
   font-size: 1.1rem;
 }
 
-.accordion-button:hover {
-  /* color: #f39c12; */
-}
+/* .accordion-button:hover {
+  color: #f39c12;
+} */
 
 .image-display {
   position: relative;
@@ -1128,9 +1128,9 @@
     padding: 0px 40px;
   }
 
-  .according-padd {
+  /* .according-padd {
     /* padding: 0px 20px; */
-  }
+  /* } */ 
 }
 
 /* ///////////////////////////////  Services Section Styling End ///////////////////////////////// */
